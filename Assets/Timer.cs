@@ -1,10 +1,10 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    public int timeLeft = 5;
+    public int timeLeft = 75;
     public Text countdownText;
 
     // Use this for initialization

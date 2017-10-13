@@ -387,7 +387,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Time Left = 5
+  m_Text: 
 --- !u!222 &1075820003
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -405,7 +405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c3d5468dd489d048b80e81fccae3535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLeft: 5
+  timeLeft: 75
   countdownText: {fileID: 1075820002}
 --- !u!1 &1168387738
 GameObject:
