@@ -5,11 +5,11 @@ using System.Collections;
 //Drag
 public class drag : MonoBehaviour {
 	
-	float distance = 5;
-	 Vector3 mMouseDownPos;
+	float distance = 4;
+	Vector3 mMouseDownPos;
  	Vector3 mMouseUpPos;
  	public float speed = .1f;
- 
+ 	public float arc = 0.5f;
 	
 
 
@@ -27,9 +27,7 @@ public class drag : MonoBehaviour {
  		{
      
     		 mMouseDownPos = Input.mousePosition;
-   			 Debug.Log( "the mouse down pos is " + mMouseDownPos.y.ToString() );
-   			 mMouseDownPos = Input.mousePosition;
-    		 Debug.Log( "the mouse down pos is " + mMouseDownPos.z.ToString() );
+   			 Debug.Log( "the mouse down pos is " + mMouseDownPos );
      		 mMouseDownPos.z = 0;
 	 	}
  
@@ -37,12 +35,13 @@ public class drag : MonoBehaviour {
  		{
 
      		mMouseUpPos = Input.mousePosition;
-    		mMouseUpPos = Input.mousePosition;
      		mMouseUpPos.z = 0;
-     		var direction = mMouseDownPos - mMouseUpPos;
+     		var direction = mMouseUpPos - mMouseDownPos;
      		direction.Normalize();
-     		GetComponent<Rigidbody>().AddForce (-direction * speed,ForceMode.Impulse);
-     		Debug.Log( "the mouse up pos is " + mMouseUpPos.ToString() );
+     		Vector3 tmpDir = new Vector3(direction.x,arc,direction.y);
+     		GetComponent<Rigidbody>().AddForce (tmpDir * speed,ForceMode.Impulse);
+     		Debug.Log( "the mouse up pos is " + mMouseUpPos);
  		}
 }
 	
+
