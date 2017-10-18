@@ -136,10 +136,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tableauxIdx:
-  - {fileID: 1024327395166136, guid: 29475ded5c3a36a4eb30f39d80ee68cb, type: 2}
+  - {fileID: 0}
   - {fileID: 1716964926874636, guid: e05cd8d54f7bd8543948492d6726bf84, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1337593256710544, guid: 1a92b9ad4fda38245abfd16eaba58ae0, type: 2}
+  - {fileID: 1716964926874636, guid: e05cd8d54f7bd8543948492d6726bf84, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
