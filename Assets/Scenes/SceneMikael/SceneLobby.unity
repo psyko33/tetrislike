@@ -212,7 +212,7 @@ GameObject:
   - component: {fileID: 465192942}
   - component: {fileID: 465192941}
   m_Layer: 0
-  m_Name: Lek
+  m_Name: LoadManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -229,6 +229,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f6b01735041b3842ba7139ca3ad3ec2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boutique: {fileID: 0}
+  jouer: {fileID: 0}
 --- !u!4 &465192942
 Transform:
   m_ObjectHideFlags: 0
@@ -319,7 +321,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 465192941}
-        m_MethodName: OnClickStart2
+        m_MethodName: LoadWorld1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
