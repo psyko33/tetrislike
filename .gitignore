@@ -33,3 +33,6 @@ sysinfo.txt
 *.apk
 *.unitypackage
 Docs/~$Planning.xlsx
+Assets/Models/Materials/No Name.mat.meta
+Assets/Models/Materials/No Name.mat
+Assets/Models/Materials.meta
