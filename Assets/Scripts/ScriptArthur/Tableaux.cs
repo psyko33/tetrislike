@@ -21,7 +21,7 @@ public class Tableaux : MonoBehaviour {
 	{
 		
 		currentWall = Instantiate(tableauxIdx[nombreIdx],transform.position,Quaternion.identity);
-
+	
 	}
 	
 
@@ -30,7 +30,9 @@ public class Tableaux : MonoBehaviour {
 	{
 		if (Input.GetKeyDown("space"))
 		{
+			Debug.Log("yo");
 			UpdateWall();
+
 		}
 			
 
