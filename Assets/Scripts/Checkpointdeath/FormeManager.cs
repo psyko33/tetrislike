@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -30,7 +30,9 @@ public class FormeManager : MonoBehaviour  {
 	{	
 		transform.position = currentCheckpointPosition ;
 		GetComponent<Rigidbody>().velocity = new Vector3(0,0,0) ;
+		transform.rotation = Quaternion.identity;
 	}
+	
 
 }
 		
