@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
 	public GameObject pause;
 	public GameObject boutique;
 	public GameObject game;
+	public Button buttonPause;
 	public int timeLeft = 75;
     public Text countdownText;
 
@@ -60,12 +61,13 @@ public class UIManager : MonoBehaviour
 		{
 			
 			pause.SetActive(true);
-			//button.interactable = false;
+			buttonPause.interactable = false;
 		}	
 
 		public void GoToSceneLobby ()
 		{
-		 Application.LoadLevel("SceneLobby");	
+		 Application.LoadLevel("SceneLobby");
+		 Time.timeScale = 1;	
 		}
 		
 		public void LoadWorld1 ()
@@ -79,10 +81,25 @@ public class UIManager : MonoBehaviour
 		pause.SetActive (false);
 
 		}
-		public void LoadGame ()
+		public void ReturnPause ()
 		{
 		boutique.SetActive(false);
-		game.SetActive (true);
+		pause.SetActive (true);
+		}
+
+		public void Continuer() 
+		{
+			game.SetActive (true);
+			pause.SetActive(false);
+			Time.timeScale = 1;
+			buttonPause.interactable = true;
+
+		}
+
+		public void ReloadScene ()
+		{
+			Application.LoadLevel(Application.loadedLevel);
+			Time.timeScale = 1;
 		}
 
 		public void QuitButton()
