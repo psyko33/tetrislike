@@ -28,9 +28,11 @@ public class FormeManager : MonoBehaviour  {
 
 	public void Death()
 	{	
-		transform.position = currentCheckpointPosition ;
+		
 		GetComponent<Rigidbody>().velocity = new Vector3(0,0,0) ;
+		GetComponent<Rigidbody>().angularVelocity = new Vector3(0,0,0);
 		transform.rotation = Quaternion.identity;
+		transform.position = currentCheckpointPosition ;
 	}
 	
 
