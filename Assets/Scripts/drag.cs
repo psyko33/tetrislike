@@ -21,15 +21,6 @@ public class drag : MonoBehaviour {
 		transform.position = objPosition;
 	}
 
-
- 
- 	void OnMouseDown() 
- 		{
-     
-    		 mMouseDownPos = Input.mousePosition;
-   			 Debug.Log( "the mouse down pos is " + mMouseDownPos );
-     		 mMouseDownPos.z = 0;
-	 	}
  
  	void OnMouseUp() 
  		{

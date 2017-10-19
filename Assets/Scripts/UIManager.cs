@@ -55,6 +55,8 @@ public class UIManager : MonoBehaviour
 			Time.timeScale = 1;
 			}
 		
+			
+
 		}
 		
 		public void LoadPause ()
