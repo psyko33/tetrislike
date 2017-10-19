@@ -5,7 +5,7 @@ using UnityEngine;
 public class ScriptJouerQuitter : MonoBehaviour 
 {
 	public GameObject boutique;
-	public GameObject jouer;
+	public GameObject lobby;
 
 
 	public void GoToSceneLobby ()
@@ -21,13 +21,13 @@ public class ScriptJouerQuitter : MonoBehaviour
 	public void LoadBoutique ()
 	{
 	boutique.SetActive(true);
-	jouer.SetActive(false);
+	lobby.SetActive(false);
 
 	}
-	public void LoadJouer ()
+	public void LoadLobby ()
 	{
 	boutique.SetActive(false);
-	jouer.SetActive(true);
+	lobby.SetActive(true);
 
 	}
 
