@@ -8,6 +8,9 @@ public class Tableaux : MonoBehaviour {
 	public GameObject[] tableauxIdx;
 	private int nombreIdx;
 	private GameObject currentWall;
+	public int numHoles;
+	public GameObject SpawnA;
+	public GameObject SpawnB;
 
 	// Use this for initialization
 	void Start () 
@@ -49,6 +52,16 @@ public class Tableaux : MonoBehaviour {
 			nombreIdx ++;
 			PopMur();
 		}	
+	}
+
+	void UpdateHoles()
+	{
+		numHoles--;
+		if(numHoles == 0)
+		{
+			UpdateWall();
+
+		}
 	}
 
 }

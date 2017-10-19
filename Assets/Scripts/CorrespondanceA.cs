@@ -6,6 +6,8 @@ public class CorrespondanceA : MonoBehaviour {
 
 	public GameObject FormeA ;
 	public GameObject FormeAMur;
+	public int nbWallActif;
+
 
 	// Use this for initialization
 	void Start () {
@@ -22,6 +24,8 @@ public class CorrespondanceA : MonoBehaviour {
         {
             Destroy(other.gameObject);
             FormeAMur.SetActive(true);
+            nbWallActif ++;
+
         }
 
 	}
