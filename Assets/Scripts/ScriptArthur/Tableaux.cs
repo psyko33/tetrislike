@@ -9,8 +9,6 @@ public class Tableaux : MonoBehaviour {
 	private int nombreIdx;
 	private GameObject currentWall;
 	public int numHoles;
-	public GameObject SpawnA;
-	public GameObject SpawnB;
 
 	// Use this for initialization
 	void Start () 
@@ -31,11 +29,11 @@ public class Tableaux : MonoBehaviour {
 
 	void Update () 
 	{
-		if (Input.GetKeyDown("space"))
+		/*if (Input.GetKeyDown("space"))
 		{
 			UpdateWall();
 
-		}
+		}*/
 			
 
 	}
@@ -54,7 +52,7 @@ public class Tableaux : MonoBehaviour {
 		}	
 	}
 
-	void UpdateHoles()
+	public void UpdateHoles()
 	{
 		numHoles--;
 		if(numHoles == 0)

@@ -27,17 +27,22 @@ public class Correspondance : MonoBehaviour {
 
 
 	void OnTriggerEnter(Collider other) {
+
+        Debug.Log("Coucou");
        
         if (other.gameObject.tag == gameObject.tag && other.gameObject.tag ==("A"))
        		{
             	Destroy(gameObject);
            		FormeAMur.SetActive(true);
+           		transform.root.GetComponent<Tableaux>().UpdateHoles();
         	}
 
         if (other.gameObject.tag == gameObject.tag	&& other.gameObject.tag == ("B"))
         	{
             	Destroy(gameObject);
             	FormeBMur.SetActive(true);
+            	transform.root.GetComponent<Tableaux>().UpdateHoles();
+
         	}
         // if (other.gameObject.tag == gameObject.tag)
        	// 	{
