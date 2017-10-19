@@ -29,7 +29,6 @@ public int numHoles;
 		
 		else if(numHoles != 0)
 		{
-		
 			UpdateHoles();
 		
 		}

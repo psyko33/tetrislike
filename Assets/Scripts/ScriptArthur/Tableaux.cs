@@ -30,7 +30,6 @@ public class Tableaux : MonoBehaviour {
 	{
 		if (Input.GetKeyDown("space"))
 		{
-			Debug.Log("yo");
 			UpdateWall();
 
 		}
@@ -41,8 +40,15 @@ public class Tableaux : MonoBehaviour {
 	void UpdateWall()
 	{
 		Destroy(currentWall);
-		nombreIdx ++;
-		PopMur();
+		if(nombreIdx == 21)
+		{
+			Debug.Log("fini");
+		}
+		else if (nombreIdx != 21)
+		{
+			nombreIdx ++;
+			PopMur();
+		}	
 	}
 
 }
