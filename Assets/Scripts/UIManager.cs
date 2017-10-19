@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,6 +11,7 @@ public class UIManager : MonoBehaviour
 	public GameObject pause;
 	public GameObject boutique;
 	public GameObject game;
+	public GameObject menueFin;
 	public Button buttonPause;
 	public int timeLeft = 75;
     public Text countdownText;
@@ -29,12 +30,12 @@ public class UIManager : MonoBehaviour
 	        if (timeLeft <= 0)
 	        {
 	            StopCoroutine("LoseTime");
-	            countdownText.text = "Times Up!";
+	       		
+	       		menueFin.SetActive(true);
+	       		game.SetActive(false);
+	       		
 	        }
 	    }
-
-		
-	  
 
 	    IEnumerator LoseTime()
 	    {
