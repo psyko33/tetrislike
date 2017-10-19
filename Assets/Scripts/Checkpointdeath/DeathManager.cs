@@ -21,7 +21,7 @@ public class DeathManager : MonoBehaviour {
 			{
 				Debug.Log("Mort");
 				other.transform.GetComponent<FormeManager>().Death();
-			
+				
 			}
 
 	}
