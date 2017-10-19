@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour 
 
@@ -68,13 +69,13 @@ public class UIManager : MonoBehaviour
 
 		public void GoToSceneLobby ()
 		{
-		 Application.LoadLevel("SceneLobby");
+		 SceneManager.LoadScene("SceneLobby");
 		 Time.timeScale = 1;	
 		}
 		
 		public void LoadWorld1 ()
 		{
-		 Application.LoadLevel("SceneMikael");	
+		 SceneManager.LoadScene("SceneMikael");
 		}
 		
 		public void LoadBoutique ()
@@ -100,7 +101,7 @@ public class UIManager : MonoBehaviour
 
 		public void ReloadScene ()
 		{
-			Application.LoadLevel(Application.loadedLevel);
+			SceneManager.LoadScene("SceneMikael");
 			Time.timeScale = 1;
 		}
 
