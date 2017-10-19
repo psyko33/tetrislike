@@ -18,7 +18,7 @@ public class Checkpoint : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other)
 	{
-		if(other.CompareTag("A"))
+		if(other.CompareTag("A") || other.CompareTag("B") || other.CompareTag("C") || other.CompareTag("D")  || other.CompareTag("E") || other.CompareTag("F"))
 		{
 			Debug.Log("Checkpoint") ;
 			other.transform.GetComponent<FormeManager>().CheckPointTake(transform.position) ;

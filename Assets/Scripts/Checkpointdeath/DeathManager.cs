@@ -16,12 +16,13 @@ public class DeathManager : MonoBehaviour {
 
 	void OnTriggerEnter (Collider other)
 	{
-	if (other.CompareTag("A"))
-		{
-			Debug.Log("Mort");
-			other.transform.GetComponent<FormeManager>().Death();
+	
+		if(other.CompareTag("A") || other.CompareTag("B") || other.CompareTag("C") || other.CompareTag("D")  || other.CompareTag("E") || other.CompareTag("F"))
+			{
+				Debug.Log("Mort");
+				other.transform.GetComponent<FormeManager>().Death();
 			
-		}
+			}
 
 	}
 
