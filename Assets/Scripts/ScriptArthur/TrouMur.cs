@@ -15,7 +15,11 @@ public int numHoles;
 	// Update is called once per frame
 	void Update () 
 	{
-		
+		if (Input.GetKeyDown("space"))
+		{
+			UpdateHoles();
+
+		}
 	}
 
 	void UpdateHoles()
