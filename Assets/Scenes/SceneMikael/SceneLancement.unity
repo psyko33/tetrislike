@@ -288,7 +288,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pause: {fileID: 0}
   boutique: {fileID: 0}
-  lobby: {fileID: 0}
   game: {fileID: 0}
   timeLeft: 75
   countdownText: {fileID: 0}
@@ -444,7 +443,7 @@ Prefab:
     - target: {fileID: 114278338974267568, guid: 40404714791a08f4ca61be2440faba6f,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadLobby
+      value: GoToSceneLobby
       objectReference: {fileID: 0}
     - target: {fileID: 114278338974267568, guid: 40404714791a08f4ca61be2440faba6f,
         type: 2}
