@@ -72,7 +72,7 @@ public class UIManager : MonoBehaviour
 		
 		public void LoadWorld1 ()
 		{
-		 SceneManager.LoadScene("SceneMikael");
+		 SceneManager.LoadScene("SceneKevin");
 		}
 		
 		public void LoadBoutique ()
@@ -98,7 +98,7 @@ public class UIManager : MonoBehaviour
 
 		public void ReloadScene ()
 		{
-			SceneManager.LoadScene("SceneMikael");
+			SceneManager.LoadScene("SceneKevin");
 			Time.timeScale = 1;
 		}
 
