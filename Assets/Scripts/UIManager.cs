@@ -12,8 +12,9 @@ public class UIManager : MonoBehaviour
 	public GameObject boutique;
 	public GameObject game;
 	public GameObject menueFin;
+	public GameObject antiDrag;
 	public Button buttonPause;
-	public int timeLeft = 75;
+	public int timeLeft;
     public Text countdownText;
 
 		 
@@ -21,6 +22,7 @@ public class UIManager : MonoBehaviour
 	    {
 	        StartCoroutine("LoseTime");
 	   		Time.timeScale = 1;
+	   		antiDrag.SetActive(false);
 	    }
 
 
@@ -34,7 +36,8 @@ public class UIManager : MonoBehaviour
 	       		
 	       		menueFin.SetActive(true);
 	       		game.SetActive(false);
-	       		Time.timeScale = 0;
+	       		Time.timeScale = 0; 
+	       		antiDrag.SetActive(true);
 	        }
 	    }
 
@@ -59,10 +62,16 @@ public class UIManager : MonoBehaviour
 			}
 			pause.SetActive(true);
 			buttonPause.interactable = false;
-			
+			antiDrag.SetActive(true);
 		}
 		
 		
+
+		public void GoToSceneLancement ()
+		{
+		 SceneManager.LoadScene("SceneLancement");
+		 Time.timeScale = 1;	
+		}
 
 		public void GoToSceneLobby ()
 		{
@@ -91,6 +100,7 @@ public class UIManager : MonoBehaviour
 		{
 			game.SetActive (true);
 			pause.SetActive(false);
+			antiDrag.SetActive(false);
 			Time.timeScale = 1;
 			buttonPause.interactable = true;
 

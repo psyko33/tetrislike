@@ -5,7 +5,7 @@ using System.Collections;
 //Drag
 public class drag : MonoBehaviour {
 	
-	float distance = 4;
+	float distance = 6;
 	Vector3 mMouseDownPos;
  	Vector3 mMouseUpPos;
  	public float speed = .1f;

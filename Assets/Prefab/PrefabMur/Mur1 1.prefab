@@ -401,7 +401,7 @@ GameObject:
   - component: {fileID: 4964051958896228}
   - component: {fileID: 65382753795012272}
   m_Layer: 0
-  m_Name: TriggerFormeB
+  m_Name: TriggerB
   m_TagString: B
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -434,7 +434,7 @@ GameObject:
   - component: {fileID: 4667737757721390}
   - component: {fileID: 65434470853077504}
   m_Layer: 0
-  m_Name: TriggerFormeA
+  m_Name: TriggerA
   m_TagString: A
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
