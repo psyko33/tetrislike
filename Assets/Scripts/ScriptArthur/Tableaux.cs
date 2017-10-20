@@ -8,35 +8,44 @@ public class Tableaux : MonoBehaviour {
 	public GameObject[] tableauxIdx;
 	private int nombreIdx;
 	private GameObject currentWall;
-	public int numHoles;
+	private int currentHoles;
+
+    private static Tableaux instance;
+    public static Tableaux Instance () 
+    {
+        return instance;
+    }
+
+    void Awake (){
+        if (instance != null)
+        {
+            Destroy (gameObject);
+        }
+        else 
+        {
+            instance = this;
+        }
+    }
+
+
 
 	// Use this for initialization
 	void Start () 
 	{
 		nombreIdx = 1;
 		PopMur();
+		
 
 	}
 	
 	void PopMur()
 	{
 		
-		currentWall = Instantiate(tableauxIdx[nombreIdx],transform.position,Quaternion.identity);
+		currentWall = Instantiate(tableauxIdx[nombreIdx],transform.position,transform.rotation);
+		currentHoles = currentWall.GetComponent<Murs>().GetNumHoles();
 	
 	}
-	
-
-
-	void Update () 
-	{
-		/*if (Input.GetKeyDown("space"))
-		{
-			UpdateWall();
-
-		}*/
 			
-
-	}
 
 	void UpdateWall()
 	{
@@ -52,14 +61,16 @@ public class Tableaux : MonoBehaviour {
 		}	
 	}
 
-	public void UpdateHoles()
+	public void CheckWin()
 	{
-		numHoles--;
-		if(numHoles == 0)
+		currentHoles--;
+		if(currentHoles == 0)
 		{
 			UpdateWall();
 
 		}
 	}
+
+	
 
 }

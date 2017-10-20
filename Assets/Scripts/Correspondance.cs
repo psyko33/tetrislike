@@ -25,23 +25,28 @@ public class Correspondance : MonoBehaviour {
 
 
 
-
 	void OnTriggerEnter(Collider other) {
 
         Debug.Log("Coucou");
        
         if (other.gameObject.tag == gameObject.tag && other.gameObject.tag ==("A"))
        		{
+
+                Tableaux.Instance().CheckWin();
+                FormeAMur.SetActive(true);
             	Destroy(gameObject);
-           		FormeAMur.SetActive(true);
-           		transform.root.GetComponent<Tableaux>().UpdateHoles();
+           		
+           		
         	}
 
         if (other.gameObject.tag == gameObject.tag	&& other.gameObject.tag == ("B"))
         	{
+
+                Tableaux.Instance().CheckWin();
+                FormeBMur.SetActive(true);
             	Destroy(gameObject);
-            	FormeBMur.SetActive(true);
-            	transform.root.GetComponent<Tableaux>().UpdateHoles();
+            	
+            	
 
         	}
         // if (other.gameObject.tag == gameObject.tag)
