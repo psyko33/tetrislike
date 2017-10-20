@@ -20,6 +20,7 @@ public class UIManager : MonoBehaviour
 		  void Start()
 	    {
 	        StartCoroutine("LoseTime");
+	   		Time.timeScale = 1;
 	    }
 
 
@@ -33,7 +34,7 @@ public class UIManager : MonoBehaviour
 	       		
 	       		menueFin.SetActive(true);
 	       		game.SetActive(false);
-	       		
+	       		Time.timeScale = 0;
 	        }
 	    }
 
@@ -56,17 +57,12 @@ public class UIManager : MonoBehaviour
 			{
 			Time.timeScale = 1;
 			}
-		
-			
-
-		}
-		
-		public void LoadPause ()
-		{
-			
 			pause.SetActive(true);
 			buttonPause.interactable = false;
-		}	
+			
+		}
+		
+		
 
 		public void GoToSceneLobby ()
 		{
@@ -110,5 +106,8 @@ public class UIManager : MonoBehaviour
 		{
 			Application.Quit() ;
 		}
+
+
+
 
 }
