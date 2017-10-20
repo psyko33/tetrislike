@@ -49,25 +49,37 @@ public class Correspondance : MonoBehaviour {
             	
 
         	}
-        // if (other.gameObject.tag == gameObject.tag)
-       	// 	{
-        //     	Destroy(gameObject);
-        //     	FormeCMur.SetActive(true);
-        // 	}
-        // if (other.gameObject.tag == gameObject.tag)
-        // 	{
-        //     	Destroy(gameObject);
-        //     	FormeDMur.SetActive(true);
-        // 	}
-        // if (other.gameObject.tag == gameObject.tag)
-        // 	{
-        //    		Destroy(gameObject);
-        //     	FormeEMur.SetActive(true);
-        // 	}
-        // if (other.gameObject.tag == gameObject.tag)
-        // 	{
-        //     	Destroy(gameObject);
-        //     	FormeFMur.SetActive(true);
-        // 	}
+       if (other.gameObject.tag == gameObject.tag   && other.gameObject.tag == ("C"))
+            {
+
+                Tableaux.Instance().CheckWin();
+                FormeBMur.SetActive(true);
+                Destroy(gameObject);
+            }
+                
+        if (other.gameObject.tag == gameObject.tag  && other.gameObject.tag == ("D"))
+            {
+
+                Tableaux.Instance().CheckWin();
+                FormeBMur.SetActive(true);
+                Destroy(gameObject);
+            }
+                
+       if (other.gameObject.tag == gameObject.tag   && other.gameObject.tag == ("E"))
+            {
+
+                Tableaux.Instance().CheckWin();
+                FormeBMur.SetActive(true);
+                Destroy(gameObject);
+            }
+                
+        if (other.gameObject.tag == gameObject.tag  && other.gameObject.tag == ("F"))
+            {
+
+                Tableaux.Instance().CheckWin();
+                FormeBMur.SetActive(true);
+                Destroy(gameObject);
+            }
+                
 	}
 }
