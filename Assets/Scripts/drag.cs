@@ -11,7 +11,10 @@ public class drag : MonoBehaviour {
  	public float speed = .1f;
  	public float arc = 0.5f;
 	
-
+ 	void OnMouseDown ()
+ 	{
+ 		mMouseDownPos = transform.position;
+ 	}
 
 	void OnMouseDrag()
 	{
@@ -25,8 +28,8 @@ public class drag : MonoBehaviour {
  	void OnMouseUp() 
  		{
 
-     		mMouseUpPos = Input.mousePosition;
-     		mMouseUpPos.z = 0;
+     		mMouseUpPos = transform.position;
+     		// mMouseUpPos.z = 0;
      		var direction = mMouseUpPos - mMouseDownPos;
      		direction.Normalize();
      		Vector3 tmpDir = new Vector3(direction.x,arc,direction.y);
