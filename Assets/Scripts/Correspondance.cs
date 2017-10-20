@@ -53,7 +53,7 @@ public class Correspondance : MonoBehaviour {
             {
 
                 Tableaux.Instance().CheckWin();
-                FormeBMur.SetActive(true);
+                FormeCMur.SetActive(true);
                 Destroy(gameObject);
             }
                 
@@ -61,15 +61,15 @@ public class Correspondance : MonoBehaviour {
             {
 
                 Tableaux.Instance().CheckWin();
-                FormeBMur.SetActive(true);
+                FormeDMur.SetActive(true);
                 Destroy(gameObject);
             }
                 
        if (other.gameObject.tag == gameObject.tag   && other.gameObject.tag == ("E"))
             {
 
-                Tableaux.Instance().CheckWin();
-                FormeBMur.SetActive(true);
+                // Tableaux.Instance().CheckWin();
+                FormeEMur.SetActive(true);
                 Destroy(gameObject);
             }
                 
@@ -77,7 +77,7 @@ public class Correspondance : MonoBehaviour {
             {
 
                 Tableaux.Instance().CheckWin();
-                FormeBMur.SetActive(true);
+                FormeFMur.SetActive(true);
                 Destroy(gameObject);
             }
                 

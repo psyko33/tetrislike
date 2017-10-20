@@ -37,7 +37,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4960558154301690}
   - component: {fileID: 95289086474578604}
-  - component: {fileID: 65782292884022086}
   m_Layer: 0
   m_Name: FormeESpawn
   m_TagString: E
@@ -112,7 +111,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1212995697398246}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.54, y: 3.741792, z: -11}
+  m_LocalPosition: {x: -0.55, y: 4.8, z: -13.487}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4414627006345550}
@@ -251,18 +250,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1075805136698480}
   m_Mesh: {fileID: 4300004, guid: ea1665e0a5e020349b439b6279249849, type: 3}
---- !u!65 &65782292884022086
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1212995697398246}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.0818307, y: 0.57849765, z: 1.0997427}
-  m_Center: {x: -0.26761997, y: 0.23191583, z: -0.491703}
 --- !u!95 &95289086474578604
 Animator:
   serializedVersion: 3
