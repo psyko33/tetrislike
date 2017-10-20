@@ -170,6 +170,47 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &135750043
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 135750045}
+  - component: {fileID: 135750044}
+  m_Layer: 0
+  m_Name: AntiDrag
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!65 &135750044
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 135750043}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &135750045
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 135750043}
+  m_LocalRotation: {x: 0.2241221, y: -0, z: -0, w: 0.9745611}
+  m_LocalPosition: {x: 0.09, y: 9.47, z: -19.56}
+  m_LocalScale: {x: 11.615366, y: 16.361246, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &194232091 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114510236152140406, guid: 089a3da37b221e348a65af3ab99443fd,
@@ -419,7 +460,7 @@ Prefab:
     - target: {fileID: 114184393177313798, guid: 1f1b890260cf97c428a396ecec37d9ae,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: GoToSceneLobby
+      value: GoToSceneLancement
       objectReference: {fileID: 0}
     - target: {fileID: 114342302499141568, guid: 1f1b890260cf97c428a396ecec37d9ae,
         type: 2}
@@ -543,7 +584,7 @@ Prefab:
     - target: {fileID: 114133054222181670, guid: ad3d3f960e7631a418b41cc7cb15c548,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: GoToSceneLobby
+      value: GoToSceneLancement
       objectReference: {fileID: 0}
     - target: {fileID: 114218303494420220, guid: ad3d3f960e7631a418b41cc7cb15c548,
         type: 2}
@@ -868,8 +909,13 @@ Prefab:
     - target: {fileID: 114784040091107050, guid: 21b0a8611cf4e65448d6cd9e6cb5651a,
         type: 2}
       propertyPath: timeLeft
-      value: 120
+      value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114784040091107050, guid: 21b0a8611cf4e65448d6cd9e6cb5651a,
+        type: 2}
+      propertyPath: antiDrag
+      value: 
+      objectReference: {fileID: 135750043}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 21b0a8611cf4e65448d6cd9e6cb5651a, type: 2}
   m_IsPrefabParent: 0
