@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4978109755338688}
   - component: {fileID: 95537943734917690}
   m_Layer: 0
-  m_Name: Tetris1Contour
+  m_Name: TetrisA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
