@@ -14,7 +14,7 @@ public class UIManager : MonoBehaviour
 	public GameObject menueFin;
 	public GameObject antiDrag;
 	public Button buttonPause;
-	public int timeLeft = 75;
+	public int timeLeft;
     public Text countdownText;
 
 		 

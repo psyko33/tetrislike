@@ -909,7 +909,7 @@ Prefab:
     - target: {fileID: 114784040091107050, guid: 21b0a8611cf4e65448d6cd9e6cb5651a,
         type: 2}
       propertyPath: timeLeft
-      value: 5
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 114784040091107050, guid: 21b0a8611cf4e65448d6cd9e6cb5651a,
         type: 2}
@@ -1082,7 +1082,7 @@ MonoBehaviour:
   tableauxIdx:
   - {fileID: 1606897229885262, guid: 943894f459595e94891db98d538b1c73, type: 2}
   - {fileID: 1606897229885262, guid: 943894f459595e94891db98d538b1c73, type: 2}
-  - {fileID: 1606897229885262, guid: 943894f459595e94891db98d538b1c73, type: 2}
+  - {fileID: 0}
   - {fileID: 1606897229885262, guid: 943894f459595e94891db98d538b1c73, type: 2}
   - {fileID: 1606897229885262, guid: 943894f459595e94891db98d538b1c73, type: 2}
   - {fileID: 1606897229885262, guid: 943894f459595e94891db98d538b1c73, type: 2}
