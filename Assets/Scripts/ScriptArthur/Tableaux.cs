@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Tableaux : MonoBehaviour {
 
@@ -10,6 +11,9 @@ public class Tableaux : MonoBehaviour {
 	private int nombreIdx;
 	private GameObject currentWall;
 	private int currentHoles;
+	private int currentscore = 0;
+	public Text scoreText;
+	public int newscorevalue;
 
     private static Tableaux instance;
     public static Tableaux Instance () 
@@ -67,13 +71,27 @@ public class Tableaux : MonoBehaviour {
 		currentHoles--;
 		if(currentHoles == 0)
 		{
+			AddScore();
 			UpdateWall();
-
 		}
 	}
 
-	
+	void UpdateScore()
+	{
+		scoreText.text=currentscore.ToString ("");
+	}
 
-	
+	void AddScore()
+	{
+		currentscore += newscorevalue;
+		UpdateScore();
+	}
 
 }
+
+
+	
+	
+
+	
+
