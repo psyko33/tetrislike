@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -32,7 +33,7 @@ public class Tableaux : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
-		nombreIdx = 1;
+		nombreIdx = 0;
 		PopMur();
 		
 
@@ -70,6 +71,8 @@ public class Tableaux : MonoBehaviour {
 
 		}
 	}
+
+	
 
 	
 

@@ -55,6 +55,7 @@ MonoBehaviour:
   boutique: {fileID: 0}
   game: {fileID: 0}
   menueFin: {fileID: 0}
+  antiDrag: {fileID: 0}
   buttonPause: {fileID: 0}
-  timeLeft: 3
+  timeLeft: 120
   countdownText: {fileID: 0}

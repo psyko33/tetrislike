@@ -68,7 +68,7 @@ public class Correspondance : MonoBehaviour {
        if (other.gameObject.tag == gameObject.tag   && other.gameObject.tag == ("E"))
             {
 
-                // Tableaux.Instance().CheckWin();
+                Tableaux.Instance().CheckWin();
                 FormeEMur.SetActive(true);
                 Destroy(gameObject);
             }
