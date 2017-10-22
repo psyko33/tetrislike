@@ -241,7 +241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FormeA: {fileID: 1917515543799888}
-  FormeAMur: {fileID: 0}
+  FormeAMur: {fileID: 1015387324282604, guid: 5d8589dcefd0ea4428cebbf426cc0406, type: 2}
   FormeB: {fileID: 0}
   FormeBMur: {fileID: 0}
   FormeC: {fileID: 0}

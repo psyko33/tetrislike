@@ -330,7 +330,7 @@ MonoBehaviour:
   FormeD: {fileID: 0}
   FormeDMur: {fileID: 0}
   FormeE: {fileID: 1934374385536586}
-  FormeEMur: {fileID: 0}
+  FormeEMur: {fileID: 1212995697398246, guid: 25063897043099c49a720d6f86429cad, type: 2}
   FormeF: {fileID: 0}
   FormeFMur: {fileID: 0}
 --- !u!114 &114426621712557066
