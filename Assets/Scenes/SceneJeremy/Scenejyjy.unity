@@ -1031,14 +1031,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 14
       objectReference: {fileID: 0}
-    - target: {fileID: 4024961300088052, guid: 345d9e27219d53b49bdbf9d52b835810, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4024961300088052, guid: 345d9e27219d53b49bdbf9d52b835810, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
     - target: {fileID: 1606897229885262, guid: 345d9e27219d53b49bdbf9d52b835810, type: 2}
       propertyPath: m_IsActive
       value: 0
