@@ -12,8 +12,8 @@ public class Tableaux : MonoBehaviour {
 	private GameObject currentWall;
 	private int currentHoles;
 	private int currentscore = 0;
-	public Text scoreText;
-	public int newscorevalue;
+	// public Text scoreText;
+	// public int newscorevalue;
 
     private static Tableaux instance;
     public static Tableaux Instance () 
@@ -68,24 +68,25 @@ public class Tableaux : MonoBehaviour {
 
 	public void CheckWin()
 	{
+		Debug.Log("Test1");
 		currentHoles--;
 		if(currentHoles == 0)
 		{
-			AddScore();
+			// AddScore();
 			UpdateWall();
 		}
 	}
 
-	void UpdateScore()
-	{
-		scoreText.text=currentscore.ToString ("");
-	}
+	// void UpdateScore()
+	// {
+	// 	scoreText.text=currentscore.ToString ("");
+	// }
 
-	void AddScore()
-	{
-		currentscore += newscorevalue;
-		UpdateScore();
-	}
+	// void AddScore()
+	// {
+	// 	currentscore += newscorevalue;
+	// 	UpdateScore();
+	// }
 
 }
 

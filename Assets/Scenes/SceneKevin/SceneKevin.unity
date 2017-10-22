@@ -782,6 +782,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 1606897229885262, guid: 943894f459595e94891db98d538b1c73, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 943894f459595e94891db98d538b1c73, type: 2}
   m_IsPrefabParent: 0
@@ -1142,8 +1146,6 @@ MonoBehaviour:
   - {fileID: 1606897229885262, guid: 943894f459595e94891db98d538b1c73, type: 2}
   - {fileID: 1606897229885262, guid: 943894f459595e94891db98d538b1c73, type: 2}
   - {fileID: 1606897229885262, guid: 943894f459595e94891db98d538b1c73, type: 2}
-  scoreText: {fileID: 0}
-  newscorevalue: 100
 --- !u!4 &1511435403
 Transform:
   m_ObjectHideFlags: 0
