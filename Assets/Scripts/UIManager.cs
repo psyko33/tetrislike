@@ -37,6 +37,7 @@ public class UIManager : MonoBehaviour
 		  void Start()
 	    {
 	   		antiDrag.SetActive(false);
+	   		Time.timeScale =1 ;
 	    }
 
 
