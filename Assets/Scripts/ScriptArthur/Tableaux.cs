@@ -65,11 +65,11 @@ public class Tableaux : MonoBehaviour {
 	void UpdateWall()
 	{
 		Destroy(currentWall);
-		if(nombreIdx == 21)
+		if(nombreIdx == 20)
 		{
-			Debug.Log("fini");
+			
 		}
-		else if (nombreIdx != 21)
+		else if (nombreIdx != 20)
 		{
 			nombreIdx ++;
 			PopMur();

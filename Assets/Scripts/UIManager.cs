@@ -14,6 +14,7 @@ public class UIManager : MonoBehaviour
 	public GameObject menueFin;
 	public GameObject antiDrag;
 	public Button buttonPause;
+	public Text scoreFinal;
 
 	private static UIManager instance;
     public static UIManager Instance () 
@@ -107,7 +108,7 @@ public class UIManager : MonoBehaviour
 		public void ReloadScene ()
 		{
 			SceneManager.LoadScene("SceneKevin");
-			Time.timeScale = 1;
+			
 		}
 
 		public void QuitButton()
