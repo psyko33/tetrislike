@@ -1522,7 +1522,7 @@ GameObject:
   - component: {fileID: 4921018300224262}
   - component: {fileID: 114386191014280188}
   m_Layer: 0
-  m_Name: 'Mur2 1 '
+  m_Name: Mur3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6454,6 +6454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numHoles: 3
+  scoreMurs: 0
 --- !u!114 &114476949969197910
 MonoBehaviour:
   m_ObjectHideFlags: 1
