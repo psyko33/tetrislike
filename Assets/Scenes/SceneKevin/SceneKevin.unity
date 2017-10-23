@@ -807,6 +807,11 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ReloadScene
       objectReference: {fileID: 0}
+    - target: {fileID: 114775078322706214, guid: ad3d3f960e7631a418b41cc7cb15c548,
+        type: 2}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad3d3f960e7631a418b41cc7cb15c548, type: 2}
   m_IsPrefabParent: 0
@@ -1522,7 +1527,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.80166274, y: 0.89468604}
   m_AnchorMax: {x: 0.9317833, y: 0.9725745}
-  m_AnchoredPosition: {x: 0.000061035156, y: 0.00012207031}
+  m_AnchoredPosition: {x: 0, y: 0.00048828125}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1511435401
@@ -1558,7 +1563,7 @@ MonoBehaviour:
   - {fileID: 1819504092468290, guid: 108f39b4bf2fb9c46bd7b6fb3ea1c0d3, type: 2}
   - {fileID: 1606897229885262, guid: 345d9e27219d53b49bdbf9d52b835810, type: 2}
   - {fileID: 1606897229885262, guid: 943894f459595e94891db98d538b1c73, type: 2}
-  baseTimer: 5
+  baseTimer: 50
   scoreText: {fileID: 951730115}
   timerText: {fileID: 996767964}
   uiManager: {fileID: 1921790606}
