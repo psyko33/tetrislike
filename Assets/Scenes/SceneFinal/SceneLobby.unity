@@ -137,10 +137,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pause: {fileID: 0}
   boutique: {fileID: 0}
-  lobby: {fileID: 0}
   game: {fileID: 0}
-  timeLeft: 75
-  countdownText: {fileID: 0}
+  menueFin: {fileID: 0}
+  antiDrag: {fileID: 0}
+  buttonPause: {fileID: 0}
 --- !u!224 &482766751
 RectTransform:
   m_ObjectHideFlags: 0
@@ -468,6 +468,11 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114839508468881166, guid: 82a9df39c3e0688488a2c52e8d6abaff,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224790002340594972, guid: 82a9df39c3e0688488a2c52e8d6abaff,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -652,6 +657,56 @@ Prefab:
       value: LoadWorld1
       objectReference: {fileID: 0}
     - target: {fileID: 114411104986409976, guid: 82a9df39c3e0688488a2c52e8d6abaff,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 224082064509302340, guid: 82a9df39c3e0688488a2c52e8d6abaff,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 224082064509302340, guid: 82a9df39c3e0688488a2c52e8d6abaff,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -2.999939
+      objectReference: {fileID: 0}
+    - target: {fileID: 224237017141033636, guid: 82a9df39c3e0688488a2c52e8d6abaff,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -2.999939
+      objectReference: {fileID: 0}
+    - target: {fileID: 224879372669389386, guid: 82a9df39c3e0688488a2c52e8d6abaff,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.0004708767
+      objectReference: {fileID: 0}
+    - target: {fileID: 224879372669389386, guid: 82a9df39c3e0688488a2c52e8d6abaff,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.00012207031
+      objectReference: {fileID: 0}
+    - target: {fileID: 114839508468881166, guid: 82a9df39c3e0688488a2c52e8d6abaff,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114839508468881166, guid: 82a9df39c3e0688488a2c52e8d6abaff,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114839508468881166, guid: 82a9df39c3e0688488a2c52e8d6abaff,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 482766750}
+    - target: {fileID: 114839508468881166, guid: 82a9df39c3e0688488a2c52e8d6abaff,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadWorld1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114839508468881166, guid: 82a9df39c3e0688488a2c52e8d6abaff,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
