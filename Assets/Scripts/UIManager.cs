@@ -14,41 +14,38 @@ public class UIManager : MonoBehaviour
 	public GameObject menueFin;
 	public GameObject antiDrag;
 	public Button buttonPause;
-	public int timeLeft;
-    public Text countdownText;
+
+	private static UIManager instance;
+    public static UIManager Instance () 
+    {
+        return instance;
+    }
+
+    void Awake (){
+        if (instance != null)
+        {
+            Destroy (gameObject);
+        }
+        else 
+        {
+            instance = this;
+        }
+    }
+   
 
 		 
 		  void Start()
 	    {
-	        StartCoroutine("LoseTime");
-	   		Time.timeScale = 1;
 	   		antiDrag.SetActive(false);
 	    }
 
 
 	    void Update()
 	    {
-	        countdownText.text = (" " + timeLeft);
-
-	        if (timeLeft <= 0)
-	        {
-	            StopCoroutine("LoseTime");
-	       		
-	       		menueFin.SetActive(true);
-	       		game.SetActive(false);
-	       		Time.timeScale = 0; 
-	       		antiDrag.SetActive(true);
-	        }
+	  
 	    }
 
-	    IEnumerator LoseTime()
-	    {
-	        while (true)
-	        {
-	            yield return new WaitForSeconds(1);
-	            timeLeft--;
-	        }
-	    }
+	    
 		public void Pause ()
 		{
 			
@@ -115,6 +112,16 @@ public class UIManager : MonoBehaviour
 		public void QuitButton()
 		{
 			Application.Quit() ;
+		}
+		
+		public void Timer()
+		{
+
+	       		menueFin.SetActive(true);
+	       		game.SetActive(false);
+	       		Time.timeScale = 0; 
+	       		antiDrag.SetActive(true);
+	        
 		}
 
 
