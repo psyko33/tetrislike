@@ -48,11 +48,11 @@ public class Drag2 : MonoBehaviour {
 		GetComponent<Rigidbody>().AddForce (tmpDir * force,ForceMode.Impulse);
 	}
 
-	// void OnMouseDrag()
-	// {
+	void OnMouseDrag()
+	{
 
-	// 	Vector3 mousePosition = new Vector3 (Input.mousePosition.x, Input.mousePosition.y,);
-	// 	Vector3 objPosition = Camera.main.ScreenToWorldPoint (mousePosition);
-	// 	transform.position = objPosition;
-	// }
+		Vector3 mousePosition = new Vector3 (Input.mousePosition.x, Input.mousePosition.y,0);
+		Vector3 objPosition = Camera.main.ScreenToWorldPoint (mousePosition);
+		transform.position = mousePosition;
+	}
 }
