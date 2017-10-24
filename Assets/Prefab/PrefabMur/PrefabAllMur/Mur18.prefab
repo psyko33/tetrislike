@@ -6508,7 +6508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1242eaf5eaa7b0a449b1c15b49c7071c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numHoles: 3
+  numHoles: 2
   scoreMurs: 15
 --- !u!224 &224233297738445432
 RectTransform:
