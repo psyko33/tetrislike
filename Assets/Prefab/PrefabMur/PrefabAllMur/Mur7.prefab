@@ -582,7 +582,7 @@ GameObject:
   - component: {fileID: 65089759697146120}
   - component: {fileID: 114240979189075250}
   - component: {fileID: 114543818052557596}
-  - component: {fileID: 114668699603419150}
+  - component: {fileID: 114888756847481068}
   m_Layer: 0
   m_Name: FormeC
   m_TagString: C
@@ -1065,11 +1065,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4340474304216922}
   - component: {fileID: 95940055420564086}
-  - component: {fileID: 114688817397021462}
   - component: {fileID: 114731542557977012}
   - component: {fileID: 114486041240491134}
   - component: {fileID: 54921097816896750}
   - component: {fileID: 65815446393023128}
+  - component: {fileID: 114616973709108158}
   m_Layer: 0
   m_Name: FormeD
   m_TagString: D
@@ -5618,20 +5618,7 @@ MonoBehaviour:
   FormeEMur: {fileID: 0}
   FormeF: {fileID: 0}
   FormeFMur: {fileID: 0}
---- !u!114 &114668699603419150
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1391801989080554}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec2a1115a4d0c774a8976d4e4eb1ed91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
-  arc: 0.5
---- !u!114 &114688817397021462
+--- !u!114 &114616973709108158
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -5639,11 +5626,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1697676994820088}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec2a1115a4d0c774a8976d4e4eb1ed91, type: 3}
+  m_Script: {fileID: 11500000, guid: ccbd1280c6cf8894986fe0de4cbecc6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
   arc: 0.5
+  vitesse: 10
 --- !u!114 &114709893188385578
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5678,3 +5665,16 @@ MonoBehaviour:
   FormeEMur: {fileID: 0}
   FormeF: {fileID: 0}
   FormeFMur: {fileID: 0}
+--- !u!114 &114888756847481068
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1391801989080554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccbd1280c6cf8894986fe0de4cbecc6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arc: 0.5
+  vitesse: 10

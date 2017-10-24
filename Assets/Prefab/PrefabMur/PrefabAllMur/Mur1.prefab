@@ -504,9 +504,9 @@ GameObject:
   - component: {fileID: 95759961737244786}
   - component: {fileID: 54711811226069984}
   - component: {fileID: 65706990028278454}
-  - component: {fileID: 114977145097133936}
   - component: {fileID: 114954300089899570}
   - component: {fileID: 114407337840069776}
+  - component: {fileID: 114662816049581058}
   m_Layer: 0
   m_Name: FormeE
   m_TagString: E
@@ -2301,6 +2301,19 @@ MonoBehaviour:
   FormeEMur: {fileID: 1212995697398246, guid: 25063897043099c49a720d6f86429cad, type: 2}
   FormeF: {fileID: 0}
   FormeFMur: {fileID: 0}
+--- !u!114 &114662816049581058
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1720473597370172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccbd1280c6cf8894986fe0de4cbecc6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arc: 0.5
+  vitesse: 10
 --- !u!114 &114714122483097472
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2323,16 +2336,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa2cd82bf4b7bff4e9633275e9538067, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114977145097133936
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1720473597370172}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec2a1115a4d0c774a8976d4e4eb1ed91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
-  arc: 0.5

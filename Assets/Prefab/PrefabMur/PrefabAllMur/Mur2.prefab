@@ -884,7 +884,7 @@ GameObject:
   - component: {fileID: 65392989749612988}
   - component: {fileID: 114598697414370308}
   - component: {fileID: 114281205883389924}
-  - component: {fileID: 114397185538837802}
+  - component: {fileID: 114260272561946158}
   m_Layer: 0
   m_Name: FormeA
   m_TagString: A
@@ -1536,7 +1536,7 @@ GameObject:
   - component: {fileID: 65579831953256796}
   - component: {fileID: 114586405523105588}
   - component: {fileID: 114575589481803738}
-  - component: {fileID: 114172027425716560}
+  - component: {fileID: 114181466806421462}
   m_Layer: 0
   m_Name: FormeB
   m_TagString: B
@@ -6039,7 +6039,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114172027425716560
+--- !u!114 &114181466806421462
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -6047,11 +6047,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1889671195276258}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec2a1115a4d0c774a8976d4e4eb1ed91, type: 3}
+  m_Script: {fileID: 11500000, guid: ccbd1280c6cf8894986fe0de4cbecc6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
   arc: 0.5
+  vitesse: 10
 --- !u!114 &114188426923310836
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6065,6 +6065,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numHoles: 2
   scoreMurs: 15
+--- !u!114 &114260272561946158
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1572006236106286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccbd1280c6cf8894986fe0de4cbecc6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arc: 0.5
+  vitesse: 10
 --- !u!114 &114281205883389924
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6088,19 +6101,6 @@ MonoBehaviour:
   FormeEMur: {fileID: 0}
   FormeF: {fileID: 0}
   FormeFMur: {fileID: 0}
---- !u!114 &114397185538837802
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1572006236106286}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec2a1115a4d0c774a8976d4e4eb1ed91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
-  arc: 0.5
 --- !u!114 &114459131506913776
 MonoBehaviour:
   m_ObjectHideFlags: 1
