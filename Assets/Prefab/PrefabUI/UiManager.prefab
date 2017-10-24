@@ -33,8 +33,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1316680022805594}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 595.46954, y: 1562.5975, z: 14.75}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 595.46954, y: 1562.5979, z: 14.749777}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -57,5 +57,4 @@ MonoBehaviour:
   menueFin: {fileID: 0}
   antiDrag: {fileID: 0}
   buttonPause: {fileID: 0}
-  timeLeft: 120
-  countdownText: {fileID: 0}
+  scoreFinal: {fileID: 0}
