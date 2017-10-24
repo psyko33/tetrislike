@@ -97,7 +97,7 @@ public class Tableaux : MonoBehaviour {
 	void AddTimer()
 	{
 		
-		currentTimer+=5f;
+		currentTimer+=10f;
 		timerText.text = currentTimer.ToString("f0");
 	}
 
