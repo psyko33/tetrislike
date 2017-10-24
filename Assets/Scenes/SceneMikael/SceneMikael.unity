@@ -893,6 +893,31 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ReloadScene
       objectReference: {fileID: 0}
+    - target: {fileID: 224199796339159168, guid: ad3d3f960e7631a418b41cc7cb15c548,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.0006315708
+      objectReference: {fileID: 0}
+    - target: {fileID: 224199796339159168, guid: ad3d3f960e7631a418b41cc7cb15c548,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.00061035156
+      objectReference: {fileID: 0}
+    - target: {fileID: 224528706732167396, guid: ad3d3f960e7631a418b41cc7cb15c548,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224115299995408712, guid: ad3d3f960e7631a418b41cc7cb15c548,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -2.9000854
+      objectReference: {fileID: 0}
+    - target: {fileID: 224115299995408712, guid: ad3d3f960e7631a418b41cc7cb15c548,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 6.0999146
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad3d3f960e7631a418b41cc7cb15c548, type: 2}
   m_IsPrefabParent: 0
@@ -1952,10 +1977,11 @@ MonoBehaviour:
   - {fileID: 1606897229885262, guid: 943894f459595e94891db98d538b1c73, type: 2}
   - {fileID: 1606897229885262, guid: 943894f459595e94891db98d538b1c73, type: 2}
   - {fileID: 1606897229885262, guid: 943894f459595e94891db98d538b1c73, type: 2}
-  baseTimer: 180
+  baseTimer: 5
   scoreText: {fileID: 1491536553}
   timerText: {fileID: 1008853136}
   uiManager: {fileID: 488868298}
+  scoreFinal: {fileID: 0}
 --- !u!4 &1511435403
 Transform:
   m_ObjectHideFlags: 0

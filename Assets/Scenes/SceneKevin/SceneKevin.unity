@@ -698,29 +698,19 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114637349686364564, guid: 998eef829a66b1a43920dba850a4eecd,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 558469182}
+    - target: {fileID: 114408008164133712, guid: 998eef829a66b1a43920dba850a4eecd,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 558469182}
     - target: {fileID: 1823755643662146, guid: 998eef829a66b1a43920dba850a4eecd, type: 2}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114462001523566680, guid: 998eef829a66b1a43920dba850a4eecd,
-        type: 2}
-      propertyPath: m_Text
-      value: "Score \n\n970"
-      objectReference: {fileID: 0}
-    - target: {fileID: 114462001523566680, guid: 998eef829a66b1a43920dba850a4eecd,
-        type: 2}
-      propertyPath: m_FontData.m_Alignment
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224065012450347142, guid: 998eef829a66b1a43920dba850a4eecd,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0.24097098
-      objectReference: {fileID: 0}
-    - target: {fileID: 224065012450347142, guid: 998eef829a66b1a43920dba850a4eecd,
-        type: 2}
-      propertyPath: m_AnchorMax.x
-      value: 0.9391466
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 998eef829a66b1a43920dba850a4eecd, type: 2}
@@ -892,6 +882,16 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114514011606589424, guid: 11d63a88b0abe5c498bfdbde7ac817a1,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 558469182}
+    - target: {fileID: 114457972187813008, guid: 11d63a88b0abe5c498bfdbde7ac817a1,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 558469182}
     - target: {fileID: 1630353845814922, guid: 11d63a88b0abe5c498bfdbde7ac817a1, type: 2}
       propertyPath: m_IsActive
       value: 0
@@ -1386,7 +1386,7 @@ MonoBehaviour:
   - {fileID: 1211384738770488, guid: 048e5dac59fc2d2439b967878424080c, type: 2}
   - {fileID: 1930123357516890, guid: 79a272093a8eba34897474cc9aaf4a05, type: 2}
   - {fileID: 1287439155679448, guid: 7fda6474e551aaf43ade86a5370a7613, type: 2}
-  baseTimer: 120
+  baseTimer: 20
   scoreText: {fileID: 116309481}
   timerText: {fileID: 630645353}
   uiManager: {fileID: 1921790606}
