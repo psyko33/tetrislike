@@ -673,7 +673,7 @@ GameObject:
   - component: {fileID: 65118700029897462}
   - component: {fileID: 114161666350654320}
   - component: {fileID: 114476949969197910}
-  - component: {fileID: 114729084480779584}
+  - component: {fileID: 114030986600001036}
   m_Layer: 0
   m_Name: FormeE
   m_TagString: E
@@ -1470,7 +1470,7 @@ GameObject:
   - component: {fileID: 54246627168997656}
   - component: {fileID: 114606670824079890}
   - component: {fileID: 114885438268016320}
-  - component: {fileID: 114839765439007366}
+  - component: {fileID: 114992870598159704}
   m_Layer: 0
   m_Name: FormeF
   m_TagString: F
@@ -1558,7 +1558,7 @@ GameObject:
   - component: {fileID: 65969433884616874}
   - component: {fileID: 114644804172278170}
   - component: {fileID: 114593172209237274}
-  - component: {fileID: 114553286359779738}
+  - component: {fileID: 114619860943176518}
   m_Layer: 0
   m_Name: FormeA
   m_TagString: A
@@ -6396,6 +6396,19 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114030986600001036
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1312852872910858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccbd1280c6cf8894986fe0de4cbecc6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arc: 0.75
+  vitesse: 15
 --- !u!114 &114161666350654320
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6465,18 +6478,6 @@ MonoBehaviour:
   FormeEMur: {fileID: 1776991615598498}
   FormeF: {fileID: 0}
   FormeFMur: {fileID: 0}
---- !u!114 &114553286359779738
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1845945253421064}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a523c2032e2c6694c8a8e48f1dd2b3d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  arc: 1
 --- !u!114 &114593172209237274
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6511,6 +6512,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa2cd82bf4b7bff4e9633275e9538067, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114619860943176518
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1845945253421064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccbd1280c6cf8894986fe0de4cbecc6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arc: 0.75
+  vitesse: 15
 --- !u!114 &114644804172278170
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6533,30 +6547,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b03b8ab16dde28c4c9fa1825be100969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114729084480779584
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1312852872910858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a523c2032e2c6694c8a8e48f1dd2b3d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  arc: 1
---- !u!114 &114839765439007366
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1799073445286408}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a523c2032e2c6694c8a8e48f1dd2b3d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  arc: 1
 --- !u!114 &114885438268016320
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6580,6 +6570,19 @@ MonoBehaviour:
   FormeEMur: {fileID: 0}
   FormeF: {fileID: 1799073445286408}
   FormeFMur: {fileID: 1281068536495086}
+--- !u!114 &114992870598159704
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1799073445286408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccbd1280c6cf8894986fe0de4cbecc6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arc: 0.75
+  vitesse: 15
 --- !u!224 &224027871518664320
 RectTransform:
   m_ObjectHideFlags: 1

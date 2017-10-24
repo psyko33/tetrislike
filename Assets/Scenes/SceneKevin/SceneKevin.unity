@@ -381,27 +381,27 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4620331093980068, guid: 108f39b4bf2fb9c46bd7b6fb3ea1c0d3, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4825750113773292, guid: 108f39b4bf2fb9c46bd7b6fb3ea1c0d3, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4909516349159480, guid: 108f39b4bf2fb9c46bd7b6fb3ea1c0d3, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4439457803873690, guid: 108f39b4bf2fb9c46bd7b6fb3ea1c0d3, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4844008371605114, guid: 108f39b4bf2fb9c46bd7b6fb3ea1c0d3, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4110195522691120, guid: 108f39b4bf2fb9c46bd7b6fb3ea1c0d3, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4219970684293796, guid: 108f39b4bf2fb9c46bd7b6fb3ea1c0d3, type: 2}
       propertyPath: m_RootOrder
@@ -630,6 +630,56 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10, y: 2.220446e-16, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &350152349
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4921018300224262, guid: 108f39b4bf2fb9c46bd7b6fb3ea1c0d3, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 4921018300224262, guid: 108f39b4bf2fb9c46bd7b6fb3ea1c0d3, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -6.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 4921018300224262, guid: 108f39b4bf2fb9c46bd7b6fb3ea1c0d3, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 5.730001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4921018300224262, guid: 108f39b4bf2fb9c46bd7b6fb3ea1c0d3, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0.5000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4921018300224262, guid: 108f39b4bf2fb9c46bd7b6fb3ea1c0d3, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.5000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4921018300224262, guid: 108f39b4bf2fb9c46bd7b6fb3ea1c0d3, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0.49999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 4921018300224262, guid: 108f39b4bf2fb9c46bd7b6fb3ea1c0d3, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: -0.49999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 4921018300224262, guid: 108f39b4bf2fb9c46bd7b6fb3ea1c0d3, type: 2}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1819504092468290, guid: 108f39b4bf2fb9c46bd7b6fb3ea1c0d3, type: 2}
+      propertyPath: m_Name
+      value: Mur3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1819504092468290, guid: 108f39b4bf2fb9c46bd7b6fb3ea1c0d3, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 108f39b4bf2fb9c46bd7b6fb3ea1c0d3, type: 2}
+  m_IsPrefabParent: 0
 --- !u!114 &558469182 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114784040091107050, guid: 21b0a8611cf4e65448d6cd9e6cb5651a,
@@ -1674,7 +1724,7 @@ MonoBehaviour:
   - {fileID: 1819504092468290, guid: 108f39b4bf2fb9c46bd7b6fb3ea1c0d3, type: 2}
   - {fileID: 1819504092468290, guid: 108f39b4bf2fb9c46bd7b6fb3ea1c0d3, type: 2}
   - {fileID: 1819504092468290, guid: 108f39b4bf2fb9c46bd7b6fb3ea1c0d3, type: 2}
-  baseTimer: 60
+  baseTimer: 5
   scoreText: {fileID: 951730115}
   timerText: {fileID: 996767964}
   uiManager: {fileID: 1921790606}
@@ -1796,7 +1846,7 @@ Camera:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_RenderingPath: -1
+  m_RenderingPath: 1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
