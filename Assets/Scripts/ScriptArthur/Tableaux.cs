@@ -18,6 +18,8 @@ public class Tableaux : MonoBehaviour {
 	public Text timerText;
 	public GameObject uiManager;
 	public Text scoreFinal;
+	public Button boutonAddTimer;
+	private bool canBuy = true;
 	
 
 
@@ -95,14 +97,12 @@ public class Tableaux : MonoBehaviour {
 		scoreText.text=currentscore.ToString ("");
 	}
 
-
-	void AddTimer()
+	 void AddTimer()
 	{
 		
 		currentTimer+=10f;
 		timerText.text = currentTimer.ToString("f0");
 	}
-
 	void TimerCD()
 	{
 		currentTimer -= Time.deltaTime;
@@ -113,6 +113,18 @@ public class Tableaux : MonoBehaviour {
 			UIManager.Instance().Timer();
 			scoreFinal.text=currentscore.ToString ("");
 		}
+	}
+
+
+	public void BoutiqueAddTimer()
+	{
+		if(canBuy == true)
+		{
+		currentTimer+=10f;
+		timerText.text = currentTimer.ToString("f0");
+		canBuy = false ;
+		}
+	 
 	}
 
 	
