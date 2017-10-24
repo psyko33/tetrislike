@@ -17,6 +17,8 @@ public class Tableaux : MonoBehaviour {
 	public Text scoreText;
 	public Text timerText;
 	public GameObject uiManager;
+	public Text scoreFinal;
+	
 
 
 
@@ -65,12 +67,13 @@ public class Tableaux : MonoBehaviour {
 	void UpdateWall()
 	{
 		Destroy(currentWall);
-		if(nombreIdx == 20)
+		if(nombreIdx == 19)
 		{
-			
+			uiManager.GetComponent<UIManager>().TimerWin();
 		}
-		else if (nombreIdx != 20)
+		else if (nombreIdx != 19)
 		{
+			AddTimer();
 			nombreIdx ++;
 			PopMur();
 		}	
@@ -81,7 +84,6 @@ public class Tableaux : MonoBehaviour {
 		currentHoles--;
 		if(currentHoles == 0)
 		{
-			AddTimer();
 			AddScore();
 			UpdateWall();
 		}
@@ -109,6 +111,7 @@ public class Tableaux : MonoBehaviour {
 		if(currentTimer <= 0.0f)
 		{
 			UIManager.Instance().Timer();
+			scoreFinal.text=currentscore.ToString ("");
 		}
 	}
 

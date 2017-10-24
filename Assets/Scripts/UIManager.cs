@@ -12,9 +12,11 @@ public class UIManager : MonoBehaviour
 	public GameObject boutique;
 	public GameObject game;
 	public GameObject menueFin;
+	public GameObject menueFin2;
 	public GameObject antiDrag;
 	public Button buttonPause;
 	public Text scoreFinal;
+
 
 	private static UIManager instance;
     public static UIManager Instance () 
@@ -125,7 +127,12 @@ public class UIManager : MonoBehaviour
 	        
 		}
 
-
+		public void TimerWin()
+		{
+				menueFin2.SetActive(true);
+				Time.timeScale = 0;
+				antiDrag.SetActive(true);
+		}
 
 
 }
