@@ -5,25 +5,20 @@ using UnityEngine;
 public class FormeManager : MonoBehaviour  {
 	
 	private Vector3 currentCheckpointPosition;
-
-	void Awake()
-	{
-		//DontDestroyOnLoad(transform.gameObject) ;
-	}
-	// Use this for initialization
-	void Start () 
-	{
-		
-	}
+	private Vector3 currentCheckpointRotation;
 	
 	// Update is called once per frame
 	void Update () {
 		
 	}
 
-	public void CheckPointTake(Vector3 checkpointPosition)
+	public void CheckPointTakePosition(Vector3 checkpointPosition)
 	{
 		currentCheckpointPosition = checkpointPosition ;
+	}
+	public void CheckPointTakeRotation(Vector3 checkpointRotation)
+	{
+		currentCheckpointRotation= checkpointRotation ;
 	}
 
 	public void Death()
@@ -31,7 +26,7 @@ public class FormeManager : MonoBehaviour  {
 		
 		GetComponent<Rigidbody>().velocity = new Vector3(0,0,0) ;
 		GetComponent<Rigidbody>().angularVelocity = new Vector3(0,0,0);
-		transform.rotation = Quaternion.identity;
+		transform.rotation = Quaternion.Euler(currentCheckpointRotation);
 		transform.position = currentCheckpointPosition ;
 	}
 	

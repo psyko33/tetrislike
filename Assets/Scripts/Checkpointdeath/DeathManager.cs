@@ -19,7 +19,6 @@ public class DeathManager : MonoBehaviour {
 	
 		if(other.CompareTag("A") || other.CompareTag("B") || other.CompareTag("C") || other.CompareTag("D")  || other.CompareTag("E") || other.CompareTag("F"))
 			{
-				Debug.Log("Mort");
 				other.transform.GetComponent<FormeManager>().Death();
 				
 			}

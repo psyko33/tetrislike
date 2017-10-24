@@ -20,8 +20,8 @@ public class Checkpoint : MonoBehaviour {
 	{
 		if(other.CompareTag("A") || other.CompareTag("B") || other.CompareTag("C") || other.CompareTag("D")  || other.CompareTag("E") || other.CompareTag("F"))
 		{
-			Debug.Log("Checkpoint") ;
-			other.transform.GetComponent<FormeManager>().CheckPointTake(transform.position) ;
+			other.transform.GetComponent<FormeManager>().CheckPointTakePosition(transform.position)	;
+			
 			gameObject.SetActive(false) ;
 
 		}

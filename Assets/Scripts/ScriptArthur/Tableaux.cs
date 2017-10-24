@@ -17,6 +17,7 @@ public class Tableaux : MonoBehaviour {
 	public Text scoreText;
 	public Text timerText;
 	public GameObject uiManager;
+	public Text scoreFinal;
 	
 
 
@@ -110,6 +111,7 @@ public class Tableaux : MonoBehaviour {
 		if(currentTimer <= 0.0f)
 		{
 			UIManager.Instance().Timer();
+			scoreFinal.text=currentscore.ToString ("");
 		}
 	}
 
