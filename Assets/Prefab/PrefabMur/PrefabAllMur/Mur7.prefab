@@ -5583,7 +5583,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numHoles: 2
-  scoreMurs: 0
+  scoreMurs: 35
 --- !u!114 &114486041240491134
 MonoBehaviour:
   m_ObjectHideFlags: 1
