@@ -12,7 +12,7 @@ public class Drag4 : MonoBehaviour {
 	public float arc; 
 	private bool IsDrag = false ; 
 	private float distance;
-	public int vitesse;
+	public int vitesse;	
 
 	// Use this for initialization
 	void Start () {
@@ -54,7 +54,7 @@ public class Drag4 : MonoBehaviour {
 			Debug.Log( "the mouse up pos is " + endPos);
 			direction = endPos - startPos ; 
 			direction.Normalize();
-			force = (endPos.y - startPos.y)*2; 
+			force = (endPos.y - startPos.y)*4; 
 			Vector3 tmpDir = new Vector3(direction.x,arc,direction.y);
 			GetComponent<Rigidbody>().AddForce (tmpDir * force,ForceMode.Impulse);
 		IsDrag = false;
