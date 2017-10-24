@@ -1530,26 +1530,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tableauxIdx:
-  - {fileID: 1135305114982634, guid: 735beecc31b48314fa3d888a08e5d929, type: 2}
-  - {fileID: 1606897229885262, guid: 94edea6ca7a32444c8e3b482ad7b8895, type: 2}
   - {fileID: 1819504092468290, guid: 108f39b4bf2fb9c46bd7b6fb3ea1c0d3, type: 2}
-  - {fileID: 1606897229885262, guid: 345d9e27219d53b49bdbf9d52b835810, type: 2}
-  - {fileID: 1312696689241592, guid: 818e0248139fa574f8e235554f2ac68d, type: 2}
-  - {fileID: 1290169831987898, guid: 0720f595703f6c44aa138cf35e1f8b07, type: 2}
-  - {fileID: 1812500588393104, guid: 510d0b6374c8ed443b3b39abc4261491, type: 2}
-  - {fileID: 1476001114100478, guid: b00527c6669073a40b35102a0276a6f0, type: 2}
-  - {fileID: 1778987220711110, guid: 9c7a1294b6dd7654c9bdaa5de375682a, type: 2}
-  - {fileID: 1606897229885262, guid: 2a7856131bc2aa0448968b9140a731b7, type: 2}
-  - {fileID: 1606897229885262, guid: 2a2c5ca638f07b74a89db7dda8e224c0, type: 2}
-  - {fileID: 1606897229885262, guid: 5fbaef699d9f00046ad138681aa3025d, type: 2}
-  - {fileID: 1606897229885262, guid: f015091ebb4ad7249926aabd5879ce74, type: 2}
-  - {fileID: 1606897229885262, guid: 858146311fbc25a43b0b7b02912eeedd, type: 2}
-  - {fileID: 1819504092468290, guid: 31e8597bf84e21a49891af474875bb89, type: 2}
-  - {fileID: 1158592312324220, guid: abb048b9c7c2b54449bb4d5c7581ce41, type: 2}
-  - {fileID: 1675807389512928, guid: e2cf009c08d1e6d4b9761cbd6b27761d, type: 2}
-  - {fileID: 1211384738770488, guid: 048e5dac59fc2d2439b967878424080c, type: 2}
-  - {fileID: 1930123357516890, guid: 79a272093a8eba34897474cc9aaf4a05, type: 2}
-  - {fileID: 1287439155679448, guid: 7fda6474e551aaf43ade86a5370a7613, type: 2}
+  - {fileID: 1819504092468290, guid: 108f39b4bf2fb9c46bd7b6fb3ea1c0d3, type: 2}
+  - {fileID: 1819504092468290, guid: 108f39b4bf2fb9c46bd7b6fb3ea1c0d3, type: 2}
+  - {fileID: 1819504092468290, guid: 108f39b4bf2fb9c46bd7b6fb3ea1c0d3, type: 2}
+  - {fileID: 1819504092468290, guid: 108f39b4bf2fb9c46bd7b6fb3ea1c0d3, type: 2}
+  - {fileID: 1819504092468290, guid: 108f39b4bf2fb9c46bd7b6fb3ea1c0d3, type: 2}
+  - {fileID: 1819504092468290, guid: 108f39b4bf2fb9c46bd7b6fb3ea1c0d3, type: 2}
+  - {fileID: 1819504092468290, guid: 108f39b4bf2fb9c46bd7b6fb3ea1c0d3, type: 2}
+  - {fileID: 1819504092468290, guid: 108f39b4bf2fb9c46bd7b6fb3ea1c0d3, type: 2}
+  - {fileID: 1819504092468290, guid: 108f39b4bf2fb9c46bd7b6fb3ea1c0d3, type: 2}
   baseTimer: 150
   scoreText: {fileID: 116309481}
   timerText: {fileID: 630645353}
