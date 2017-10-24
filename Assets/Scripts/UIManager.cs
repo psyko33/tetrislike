@@ -120,7 +120,6 @@ public class UIManager : MonoBehaviour
 		{
 
 	       		menueFin.SetActive(true);
-	       		game.SetActive(false);
 	       		Time.timeScale = 0; 
 	       		antiDrag.SetActive(true);
 	        
