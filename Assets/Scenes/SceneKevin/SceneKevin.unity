@@ -1724,7 +1724,7 @@ MonoBehaviour:
   - {fileID: 1819504092468290, guid: 108f39b4bf2fb9c46bd7b6fb3ea1c0d3, type: 2}
   - {fileID: 1819504092468290, guid: 108f39b4bf2fb9c46bd7b6fb3ea1c0d3, type: 2}
   - {fileID: 1819504092468290, guid: 108f39b4bf2fb9c46bd7b6fb3ea1c0d3, type: 2}
-  baseTimer: 5
+  baseTimer: 150
   scoreText: {fileID: 951730115}
   timerText: {fileID: 996767964}
   uiManager: {fileID: 1921790606}
