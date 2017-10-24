@@ -24,8 +24,11 @@ public class Drag2 : MonoBehaviour {
 	void OnMouseDown()
 	{
 		startPos = Input.mousePosition;
+		Debug.Log("ligne 1 ok");
 		startPos.z =transform.position.z - Camera.main.transform.position.z;
+		Debug.Log("ligne 2 ok");
 		startPos = Camera.main.ScreenToWorldPoint(startPos);
+		Debug.Log("ligne 3 ok");
 		Debug.Log( "the mouse down pos is " + startPos);
 	}
 
@@ -43,7 +46,13 @@ public class Drag2 : MonoBehaviour {
 		Debug.Log("force = " + force);
 		Vector3 tmpDir = new Vector3(direction.x,arc,direction.y);
 		GetComponent<Rigidbody>().AddForce (tmpDir * force,ForceMode.Impulse);
-
-
 	}
+
+	// void OnMouseDrag()
+	// {
+
+	// 	Vector3 mousePosition = new Vector3 (Input.mousePosition.x, Input.mousePosition.y,);
+	// 	Vector3 objPosition = Camera.main.ScreenToWorldPoint (mousePosition);
+	// 	transform.position = objPosition;
+	// }
 }
