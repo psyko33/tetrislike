@@ -139,8 +139,14 @@ MonoBehaviour:
   boutique: {fileID: 0}
   game: {fileID: 0}
   menueFin: {fileID: 0}
+  menueFin2: {fileID: 0}
   antiDrag: {fileID: 0}
+  appuyez: {fileID: 0}
+  maintenez: {fileID: 0}
+  glissez: {fileID: 0}
+  relachez: {fileID: 0}
   buttonPause: {fileID: 0}
+  scoreFinal: {fileID: 0}
 --- !u!224 &482766751
 RectTransform:
   m_ObjectHideFlags: 0
@@ -704,7 +710,7 @@ Prefab:
     - target: {fileID: 114839508468881166, guid: 82a9df39c3e0688488a2c52e8d6abaff,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadWorld1
+      value: LoadTuto
       objectReference: {fileID: 0}
     - target: {fileID: 114839508468881166, guid: 82a9df39c3e0688488a2c52e8d6abaff,
         type: 2}
