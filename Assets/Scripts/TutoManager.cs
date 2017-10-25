@@ -10,9 +10,17 @@ public class TutoManager : MonoBehaviour
 	public GameObject maintenez;
 	public GameObject glissez;
 	public GameObject relachez;
+	public GameObject background;
+	public GameObject popuptuto;
 
+		public void GoToAppuyez ()
+		{
+			 background.SetActive(false);
+			 popuptuto.SetActive(false);
+			 appuyez.SetActive(true);
+		}
 
-	public void GoToMaintenez ()
+		public void GoToMaintenez ()
 		{
 			appuyez.SetActive(false);
 			maintenez.SetActive(true);
@@ -48,9 +56,10 @@ public class TutoManager : MonoBehaviour
 			relachez.SetActive(false);
 			glissez.SetActive(true);
 		}
-
+		
 		public void LoadKevin ()
 		{
 		 SceneManager.LoadScene("SceneKevin");
 		}
+
 }
