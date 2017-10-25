@@ -12,6 +12,7 @@ public class TutoManager : MonoBehaviour
 	public GameObject relachez;
 	public GameObject background;
 	public GameObject popuptuto;
+	public GameObject tutotimer;
 
 		public void GoToAppuyez ()
 		{
@@ -56,7 +57,19 @@ public class TutoManager : MonoBehaviour
 			relachez.SetActive(false);
 			glissez.SetActive(true);
 		}
+
+		public void GoToTimer()
+		{
+			relachez.SetActive(false);
+			tutotimer.SetActive(true);
+		}
 		
+		public void ReturnRelachez ()
+		{
+			tutotimer.SetActive(false);
+			relachez.SetActive(true);
+		}
+
 		public void LoadKevin ()
 		{
 		 SceneManager.LoadScene("SceneKevin");
