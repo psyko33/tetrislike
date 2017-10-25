@@ -14,6 +14,10 @@ public class UIManager : MonoBehaviour
 	public GameObject menueFin;
 	public GameObject menueFin2;
 	public GameObject antiDrag;
+	public GameObject appuyez;
+	public GameObject maintenez;
+	public GameObject glissez;
+	public GameObject relachez;
 	public Button buttonPause;
 	public Text scoreFinal;
 
@@ -85,6 +89,11 @@ public class UIManager : MonoBehaviour
 		 SceneManager.LoadScene("SceneKevin");
 		}
 		
+		public void LoadTuto ()
+		{
+		 SceneManager.LoadScene("SceneTuto");	
+		}
+
 		public void LoadBoutique ()
 		{
 		boutique.SetActive(true);
@@ -132,6 +141,44 @@ public class UIManager : MonoBehaviour
 				menueFin2.SetActive(true);
 				Time.timeScale = 0;
 				antiDrag.SetActive(true);
+		}
+
+
+		public void GoToMaintenez ()
+		{
+			appuyez.SetActive(false);
+			maintenez.SetActive(true);
+		}
+
+		public void ReturnAppuyer ()
+		{
+			appuyez.SetActive(true);
+			maintenez.SetActive(false);
+		}
+
+
+		public void GoToGLissez ()
+		{
+			maintenez.SetActive(false);
+			glissez.SetActive(true);
+		}
+
+		public void ReturnMaintenez ()
+		{
+			maintenez.SetActive(true);
+			glissez.SetActive(false);
+		}
+
+		public void GoToRelachez ()
+		{
+			glissez.SetActive(false);
+			relachez.SetActive(true);
+		}
+
+		public void ReturnGlissez ()
+		{
+			relachez.SetActive(false);
+			glissez.SetActive(true);
 		}
 
 
