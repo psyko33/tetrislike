@@ -22,6 +22,7 @@ public class Tableaux : MonoBehaviour {
 	private bool canBuy = true;
 	public ParticleSystem confeti1;
 	public ParticleSystem confeti2;
+	public AudioSource audio; 
 	
 
 
@@ -78,8 +79,6 @@ public class Tableaux : MonoBehaviour {
 		{
 			AddTimer();
 			nombreIdx ++;
-			confeti1.Play();
-			confeti2.Play();
 			PopMur();
 		}	
 	}
@@ -89,9 +88,18 @@ public class Tableaux : MonoBehaviour {
 		currentHoles--;
 		if(currentHoles == 0)
 		{	
-			AddScore();
-			UpdateWall();
+			StartCoroutine(Wait());
 		}
+	}
+
+	IEnumerator Wait()
+	{
+		audio.Play();
+		confeti1.Play();
+		confeti2.Play();
+		yield return new WaitForSeconds(1);
+		AddScore();
+		UpdateWall();
 	}
 
 	void AddScore()
