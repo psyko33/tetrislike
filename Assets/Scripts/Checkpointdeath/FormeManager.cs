@@ -6,6 +6,17 @@ public class FormeManager : MonoBehaviour  {
 	
 	private Vector3 currentCheckpointPosition;
 	private Vector3 currentCheckpointRotation;
+	private float rotationX;
+	private float rotationY;
+	private float rotationZ;
+
+	void Start ()
+	{
+		rotationX = transform.rotation.eulerAngles.x;
+		rotationY = transform.rotation.eulerAngles.y;
+		rotationZ = transform.rotation.eulerAngles.z;
+		Debug.Log ("la rotation est " + rotationX +"-("+ rotationY+")-"+ rotationZ);	
+	}
 	
 	// Update is called once per frame
 	void Update () {
@@ -16,17 +27,13 @@ public class FormeManager : MonoBehaviour  {
 	{
 		currentCheckpointPosition = checkpointPosition ;
 	}
-	public void CheckPointTakeRotation(Vector3 checkpointRotation)
-	{
-		currentCheckpointRotation= checkpointRotation ;
-	}
 
 	public void Death()
 	{	
 		
 		GetComponent<Rigidbody>().velocity = new Vector3(0,0,0) ;
 		GetComponent<Rigidbody>().angularVelocity = new Vector3(0,0,0);
-		transform.rotation = Quaternion.Euler(currentCheckpointRotation);
+		transform.rotation = Quaternion.Euler(rotationX,rotationY,rotationZ);
 		transform.position = currentCheckpointPosition ;
 	}
 	
