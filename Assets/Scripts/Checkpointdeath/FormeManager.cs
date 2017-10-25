@@ -15,7 +15,7 @@ public class FormeManager : MonoBehaviour  {
 		rotationX = transform.rotation.eulerAngles.x;
 		rotationY = transform.rotation.eulerAngles.y;
 		rotationZ = transform.rotation.eulerAngles.z;
-		Debug.Log ("la rotation est " + rotationX +"-("+ rotationY+")-"+ rotationZ);	
+			
 	}
 	
 	// Update is called once per frame
