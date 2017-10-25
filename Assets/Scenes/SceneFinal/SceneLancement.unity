@@ -417,11 +417,11 @@ Prefab:
     - target: {fileID: 224832656329747402, guid: 6ccd282dc1c67454d91de0f44267ba23,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 5.700096
+      value: 5.7001038
       objectReference: {fileID: 0}
     - target: {fileID: 1746863207077398, guid: 6ccd282dc1c67454d91de0f44267ba23, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ccd282dc1c67454d91de0f44267ba23, type: 2}
@@ -610,6 +610,10 @@ MonoBehaviour:
   menueFin: {fileID: 0}
   menueFin2: {fileID: 0}
   antiDrag: {fileID: 0}
+  appuyez: {fileID: 0}
+  maintenez: {fileID: 0}
+  glissez: {fileID: 0}
+  relachez: {fileID: 0}
   buttonPause: {fileID: 0}
   scoreFinal: {fileID: 0}
 --- !u!4 &929432047
@@ -734,7 +738,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1629628238773150, guid: 40404714791a08f4ca61be2440faba6f, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114340051463390388, guid: 40404714791a08f4ca61be2440faba6f,
         type: 2}
@@ -1062,7 +1066,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1030159152115644, guid: 089a3da37b221e348a65af3ab99443fd, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 223520793276022846, guid: 089a3da37b221e348a65af3ab99443fd,
         type: 2}
