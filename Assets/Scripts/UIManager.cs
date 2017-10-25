@@ -10,14 +10,11 @@ public class UIManager : MonoBehaviour
 
 	public GameObject pause;
 	public GameObject boutique;
+	public GameObject boutiquegemmes;
 	public GameObject game;
 	public GameObject menueFin;
 	public GameObject menueFin2;
 	public GameObject antiDrag;
-	public GameObject appuyez;
-	public GameObject maintenez;
-	public GameObject glissez;
-	public GameObject relachez;
 	public Button buttonPause;
 	public Text scoreFinal;
 
@@ -100,10 +97,27 @@ public class UIManager : MonoBehaviour
 		pause.SetActive (false);
 
 		}
+
+		public void LoadBoutiqueGemmes ()
+		{
+			boutique.SetActive(false);
+			boutiquegemmes.SetActive(true);
+		}
+
+		public void ReturnBoutique ()
+		{
+			Debug.Log("1");
+			boutique.SetActive(true);
+			boutiquegemmes.SetActive(false);
+			Debug.Log("youpi");
+		}
+
 		public void ReturnPause ()
 		{
+			Debug.Log("2");
 		boutique.SetActive(false);
 		pause.SetActive (true);
+		Debug.Log("youpi");
 		}
 
 		public void Continuer() 
@@ -141,44 +155,6 @@ public class UIManager : MonoBehaviour
 				menueFin2.SetActive(true);
 				Time.timeScale = 0;
 				antiDrag.SetActive(true);
-		}
-
-
-		public void GoToMaintenez ()
-		{
-			appuyez.SetActive(false);
-			maintenez.SetActive(true);
-		}
-
-		public void ReturnAppuyer ()
-		{
-			appuyez.SetActive(true);
-			maintenez.SetActive(false);
-		}
-
-
-		public void GoToGLissez ()
-		{
-			maintenez.SetActive(false);
-			glissez.SetActive(true);
-		}
-
-		public void ReturnMaintenez ()
-		{
-			maintenez.SetActive(true);
-			glissez.SetActive(false);
-		}
-
-		public void GoToRelachez ()
-		{
-			glissez.SetActive(false);
-			relachez.SetActive(true);
-		}
-
-		public void ReturnGlissez ()
-		{
-			relachez.SetActive(false);
-			glissez.SetActive(true);
 		}
 
 
