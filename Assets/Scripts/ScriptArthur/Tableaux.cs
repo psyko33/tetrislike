@@ -85,7 +85,7 @@ public class Tableaux : MonoBehaviour {
 	{
 		currentHoles--;
 		if(currentHoles == 0)
-		{
+		{	
 			AddScore();
 			UpdateWall();
 		}
