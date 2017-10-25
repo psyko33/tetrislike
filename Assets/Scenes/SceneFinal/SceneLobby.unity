@@ -416,65 +416,6 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224832656329747402, guid: 6ccd282dc1c67454d91de0f44267ba23,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 5.7001038
-      objectReference: {fileID: 0}
-    - target: {fileID: 114591973491448622, guid: 6ccd282dc1c67454d91de0f44267ba23,
-        type: 2}
-      propertyPath: m_Text
-      value: Prochain niveau
-      objectReference: {fileID: 0}
-    - target: {fileID: 114591973491448622, guid: 6ccd282dc1c67454d91de0f44267ba23,
-        type: 2}
-      propertyPath: m_FontData.m_FontSize
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 114044174258234706, guid: 6ccd282dc1c67454d91de0f44267ba23,
-        type: 2}
-      propertyPath: m_FontData.m_FontSize
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 114044174258234706, guid: 6ccd282dc1c67454d91de0f44267ba23,
-        type: 2}
-      propertyPath: m_Text
-      value: Temps +10s
-      objectReference: {fileID: 0}
-    - target: {fileID: 224545178649191182, guid: 6ccd282dc1c67454d91de0f44267ba23,
-        type: 2}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 224360615653009094, guid: 6ccd282dc1c67454d91de0f44267ba23,
-        type: 2}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 114178809589334922, guid: 6ccd282dc1c67454d91de0f44267ba23,
-        type: 2}
-      propertyPath: m_Text
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 114558394268361014, guid: 6ccd282dc1c67454d91de0f44267ba23,
-        type: 2}
-      propertyPath: m_Text
-      value: Le retour du parpaing
-      objectReference: {fileID: 0}
-    - target: {fileID: 114558394268361014, guid: 6ccd282dc1c67454d91de0f44267ba23,
-        type: 2}
-      propertyPath: m_FontData.m_FontSize
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 114406879376430136, guid: 6ccd282dc1c67454d91de0f44267ba23,
-        type: 2}
-      propertyPath: m_Text
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 1746863207077398, guid: 6ccd282dc1c67454d91de0f44267ba23, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ccd282dc1c67454d91de0f44267ba23, type: 2}
   m_IsPrefabParent: 0

@@ -20,6 +20,8 @@ public class Tableaux : MonoBehaviour {
 	public Text scoreFinal;
 	public Button boutonAddTimer;
 	private bool canBuy = true;
+	public ParticleSystem confeti1;
+	public ParticleSystem confeti2;
 	
 
 
@@ -59,7 +61,6 @@ public class Tableaux : MonoBehaviour {
 	
 	void PopMur()
 	{
-		
 		currentWall = Instantiate(tableauxIdx[nombreIdx],transform.position,transform.rotation);
 		currentHoles = currentWall.GetComponent<Murs>().GetNumHoles();
 	
@@ -77,6 +78,8 @@ public class Tableaux : MonoBehaviour {
 		{
 			AddTimer();
 			nombreIdx ++;
+			confeti1.Play();
+			confeti2.Play();
 			PopMur();
 		}	
 	}
