@@ -15,6 +15,7 @@ public class Drag4 : MonoBehaviour {
 	public int vitesse;	
 	private float timeClick;
 
+
 	// Use this for initialization
 	void Start () {
 		
@@ -36,6 +37,7 @@ public class Drag4 : MonoBehaviour {
 
 	void OnMouseDown()
 		{
+			Tableaux.Instance().PlaySoundOnClick();
 			GetComponent<Rigidbody>().useGravity = false;
 			GetComponent<Rigidbody>().isKinematic = true;
 			distance = Vector3.Distance(transform.position , Camera.main.transform.position);

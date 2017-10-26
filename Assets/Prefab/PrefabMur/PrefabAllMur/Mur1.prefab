@@ -2301,6 +2301,12 @@ MonoBehaviour:
   FormeEMur: {fileID: 1709293841227128}
   FormeF: {fileID: 0}
   FormeFMur: {fileID: 0}
+  FormeD2: {fileID: 0}
+  FormeD2Mur: {fileID: 0}
+  FormeB2: {fileID: 0}
+  FormeB2Mur: {fileID: 0}
+  FormeA2: {fileID: 0}
+  FormeA2Mur: {fileID: 0}
 --- !u!114 &114662816049581058
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2314,6 +2320,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arc: 0.5
   vitesse: 10
+  dragAudio: {fileID: 82522540379346508, guid: 734d930b69d1dfb4ba119bd42fdbbb51, type: 2}
 --- !u!114 &114714122483097472
 MonoBehaviour:
   m_ObjectHideFlags: 1

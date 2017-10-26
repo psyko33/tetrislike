@@ -6370,6 +6370,8 @@ MonoBehaviour:
   FormeD2Mur: {fileID: 0}
   FormeB2: {fileID: 1492995540209920}
   FormeB2Mur: {fileID: 1772155080625434}
+  FormeA2: {fileID: 0}
+  FormeA2Mur: {fileID: 0}
 --- !u!114 &114582332749579336
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6397,6 +6399,8 @@ MonoBehaviour:
   FormeD2Mur: {fileID: 0}
   FormeB2: {fileID: 0}
   FormeB2Mur: {fileID: 0}
+  FormeA2: {fileID: 0}
+  FormeA2Mur: {fileID: 0}
 --- !u!114 &114646229042738788
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6410,6 +6414,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arc: 0.5
   vitesse: 10
+  dragAudio: {fileID: 0}
 --- !u!114 &114685790988266294
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6437,6 +6442,8 @@ MonoBehaviour:
   FormeD2Mur: {fileID: 0}
   FormeB2: {fileID: 0}
   FormeB2Mur: {fileID: 0}
+  FormeA2: {fileID: 0}
+  FormeA2Mur: {fileID: 0}
 --- !u!114 &114731710945445906
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6450,6 +6457,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arc: 0.5
   vitesse: 10
+  dragAudio: {fileID: 0}
 --- !u!114 &114775882214755488
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6496,3 +6504,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arc: 0.5
   vitesse: 10
+  dragAudio: {fileID: 0}

@@ -17,6 +17,7 @@ public class UIManager : MonoBehaviour
 	public GameObject antiDrag;
 	public Button buttonPause;
 	public Text scoreFinal;
+	public AudioSource bouton;
 
 
 	private static UIManager instance;
@@ -56,12 +57,14 @@ public class UIManager : MonoBehaviour
 			
 			if (Time.timeScale == 1)
 			{
+			bouton.Play();
 			Time.timeScale = 0;
 			}
 			else
 			{
 			Time.timeScale = 1;
 			}
+			bouton.Play();
 			pause.SetActive(true);
 			buttonPause.interactable = false;
 			antiDrag.SetActive(true);
@@ -71,41 +74,48 @@ public class UIManager : MonoBehaviour
 
 		public void GoToSceneLancement ()
 		{
+		 bouton.Play();
 		 SceneManager.LoadScene("SceneLancement");
 		 Time.timeScale = 1;	
 		}
 
 		public void GoToSceneLobby ()
 		{
+	     bouton.Play();
 		 SceneManager.LoadScene("SceneLobby");
 		 Time.timeScale = 1;	
 		}
 		
 		public void LoadWorld1 ()
 		{
+		 bouton.Play();
 		 SceneManager.LoadScene("SceneKevin");
 		}
 		
 		public void LoadTuto ()
 		{
+	     bouton.Play();
 		 SceneManager.LoadScene("SceneTuto");	
 		}
 
 		public void LoadBoutique ()
 		{
-		boutique.SetActive(true);
-		pause.SetActive (false);
+		 bouton.Play();
+		 boutique.SetActive(true);
+		 pause.SetActive (false);
 
 		}
 
 		public void LoadBoutiqueGemmes ()
 		{
+			bouton.Play();
 			boutique.SetActive(false);
 			boutiquegemmes.SetActive(true);
 		}
 
 		public void ReturnBoutique ()
 		{
+			bouton.Play();
 			Debug.Log("1");
 			boutique.SetActive(true);
 			boutiquegemmes.SetActive(false);
@@ -114,6 +124,7 @@ public class UIManager : MonoBehaviour
 
 		public void ReturnPause ()
 		{
+			bouton.Play();
 			Debug.Log("2");
 		boutique.SetActive(false);
 		pause.SetActive (true);
@@ -122,6 +133,7 @@ public class UIManager : MonoBehaviour
 
 		public void Continuer() 
 		{
+			bouton.Play();
 			game.SetActive (true);
 			pause.SetActive(false);
 			antiDrag.SetActive(false);
@@ -132,6 +144,7 @@ public class UIManager : MonoBehaviour
 
 		public void ReloadScene ()
 		{
+			bouton.Play();
 			SceneManager.LoadScene("SceneKevin");
 			
 		}
@@ -143,7 +156,7 @@ public class UIManager : MonoBehaviour
 		
 		public void Timer()
 		{
-
+				
 	       		menueFin.SetActive(true);
 	       		Time.timeScale = 0; 
 	       		antiDrag.SetActive(true);
@@ -151,7 +164,8 @@ public class UIManager : MonoBehaviour
 		}
 
 		public void TimerWin()
-		{
+		{	
+				
 				menueFin2.SetActive(true);
 				Time.timeScale = 0;
 				antiDrag.SetActive(true);

@@ -6295,6 +6295,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arc: 0.5
   vitesse: 10
+  dragAudio: {fileID: 0}
 --- !u!114 &114188426923310836
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6361,6 +6362,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arc: 0.5
   vitesse: 10
+  dragAudio: {fileID: 0}
 --- !u!114 &114531476468327824
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6458,6 +6460,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arc: 0.5
   vitesse: 10
+  dragAudio: {fileID: 0}
 --- !u!114 &114996022974610688
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -6595,6 +6595,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arc: 0.5
   vitesse: 10
+  dragAudio: {fileID: 0}
 --- !u!114 &114295471987312428
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6618,6 +6619,12 @@ MonoBehaviour:
   FormeEMur: {fileID: 0}
   FormeF: {fileID: 1059353371803816}
   FormeFMur: {fileID: 1120482682493804}
+  FormeD2: {fileID: 0}
+  FormeD2Mur: {fileID: 0}
+  FormeB2: {fileID: 0}
+  FormeB2Mur: {fileID: 0}
+  FormeA2: {fileID: 0}
+  FormeA2Mur: {fileID: 0}
 --- !u!114 &114391880004187084
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6641,6 +6648,12 @@ MonoBehaviour:
   FormeEMur: {fileID: 0}
   FormeF: {fileID: 0}
   FormeFMur: {fileID: 0}
+  FormeD2: {fileID: 0}
+  FormeD2Mur: {fileID: 0}
+  FormeB2: {fileID: 0}
+  FormeB2Mur: {fileID: 0}
+  FormeA2: {fileID: 0}
+  FormeA2Mur: {fileID: 0}
 --- !u!114 &114401101268675720
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6665,6 +6678,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arc: 0.5
   vitesse: 10
+  dragAudio: {fileID: 0}
 --- !u!114 &114543173301494878
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6702,6 +6716,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arc: 0.5
   vitesse: 10
+  dragAudio: {fileID: 0}
 --- !u!114 &114662949871339470
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6715,6 +6730,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arc: 0.5
   vitesse: 10
+  dragAudio: {fileID: 0}
 --- !u!114 &114689907487596498
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6782,6 +6798,12 @@ MonoBehaviour:
   FormeEMur: {fileID: 0}
   FormeF: {fileID: 0}
   FormeFMur: {fileID: 0}
+  FormeD2: {fileID: 0}
+  FormeD2Mur: {fileID: 0}
+  FormeB2: {fileID: 0}
+  FormeB2Mur: {fileID: 0}
+  FormeA2: {fileID: 0}
+  FormeA2Mur: {fileID: 0}
 --- !u!114 &114984316835609198
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6805,6 +6827,12 @@ MonoBehaviour:
   FormeEMur: {fileID: 1212995697398246, guid: 25063897043099c49a720d6f86429cad, type: 2}
   FormeF: {fileID: 0}
   FormeFMur: {fileID: 0}
+  FormeD2: {fileID: 0}
+  FormeD2Mur: {fileID: 0}
+  FormeB2: {fileID: 0}
+  FormeB2Mur: {fileID: 0}
+  FormeA2: {fileID: 0}
+  FormeA2Mur: {fileID: 0}
 --- !u!224 &224113301328051088
 RectTransform:
   m_ObjectHideFlags: 1

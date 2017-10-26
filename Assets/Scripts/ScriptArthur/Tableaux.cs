@@ -20,7 +20,12 @@ public class Tableaux : MonoBehaviour {
 	public Text scoreFinal;
 	public ParticleSystem confeti1;
 	public ParticleSystem confeti2;
-	public AudioSource audio; 
+	public AudioSource confettiAudio;
+	public AudioSource achatGemmes;
+	public AudioSource bouton;
+	public AudioSource correctforme;
+	public AudioSource drag;
+
 	private int nbGemmes = 0;
 	public Text gemmes;
 	public Text gemmes2;
@@ -87,6 +92,7 @@ public class Tableaux : MonoBehaviour {
 	public void CheckWin()
 	{
 		currentHoles--;
+		correctforme.Play();
 		if(currentHoles == 0)
 		{	
 			StartCoroutine(Wait());
@@ -95,7 +101,7 @@ public class Tableaux : MonoBehaviour {
 
 	IEnumerator Wait()
 	{
-		audio.Play();
+		confettiAudio.Play();
 		confeti1.Play();
 		confeti2.Play();
 		yield return new WaitForSeconds(1);
@@ -132,6 +138,7 @@ public class Tableaux : MonoBehaviour {
 	{
 		if (nbGemmes>=50)
 		{
+		bouton.Play();
 		currentTimer+=10f;
 		timerText.text = currentTimer.ToString("f0");
 		nbGemmes-=50;
@@ -144,6 +151,7 @@ public class Tableaux : MonoBehaviour {
 	{
 		if(nbGemmes>=100 && nombreIdx < 19)
 		{
+			bouton.Play();
 			nombreIdx++;
 			nbGemmes-=100;
 			Destroy(currentWall);
@@ -156,6 +164,7 @@ public class Tableaux : MonoBehaviour {
 	public void Add100()
 	{
 		nbGemmes+=100;
+		achatGemmes.Play();
 		gemmes.text = nbGemmes.ToString("");
 		gemmes2.text = nbGemmes.ToString("");
 
@@ -163,10 +172,15 @@ public class Tableaux : MonoBehaviour {
 	public void Add600()
 	{
 		nbGemmes+=600;
+		achatGemmes.Play();
 		gemmes.text = nbGemmes.ToString("");
 		gemmes2.text = nbGemmes.ToString("");
 	}
 
+	public void PlaySoundOnClick()
+	{
+		drag.Play();
+	}
 
 
 

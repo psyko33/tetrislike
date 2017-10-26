@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class DeathManager : MonoBehaviour {
 
+	public AudioSource death;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -19,6 +21,7 @@ public class DeathManager : MonoBehaviour {
 	
 		if(other.CompareTag("A") || other.CompareTag("B") || other.CompareTag("C") || other.CompareTag("D")  || other.CompareTag("E") || other.CompareTag("F"))
 			{
+				death.Play();
 				other.transform.GetComponent<FormeManager>().Death();
 				
 			}
