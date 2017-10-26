@@ -18,12 +18,12 @@ public class Tableaux : MonoBehaviour {
 	public Text timerText;
 	public GameObject uiManager;
 	public Text scoreFinal;
-	public Button boutonAddTimer;
 	public ParticleSystem confeti1;
 	public ParticleSystem confeti2;
 	public AudioSource audio; 
 	private int nbGemmes = 0;
 	public Text gemmes;
+	public Text gemmes2;
 	
 
 
@@ -143,6 +143,7 @@ public class Tableaux : MonoBehaviour {
 		if(nbGemmes>30)
 		{
 			nombreIdx++;
+			nbGemmes-=30;
 		}
 	}
 
@@ -150,12 +151,14 @@ public class Tableaux : MonoBehaviour {
 	{
 		nbGemmes+=100;
 		gemmes.text = nbGemmes.ToString(""+"Gemmes");
+		gemmes2.text = nbGemmes.ToString(""+"Gemmes");
 
 	}
 	public void Add600()
 	{
 		nbGemmes+=600;
 		gemmes.text = nbGemmes.ToString(""+"Gemmes");
+		gemmes2.text = nbGemmes.ToString(""+"Gemmes");
 	}
 
 
