@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 114042953233508162}
   m_Layer: 0
   m_Name: FormeA1
-  m_TagString: A
+  m_TagString: A2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -508,7 +508,7 @@ GameObject:
   - component: {fileID: 65454238575164562}
   m_Layer: 0
   m_Name: TriggerA 1
-  m_TagString: A
+  m_TagString: A2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -688,7 +688,7 @@ GameObject:
   - component: {fileID: 54399902589016908}
   m_Layer: 0
   m_Name: FormeASpawn 1
-  m_TagString: A
+  m_TagString: A2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6331,6 +6331,12 @@ MonoBehaviour:
   FormeEMur: {fileID: 0}
   FormeF: {fileID: 0}
   FormeFMur: {fileID: 0}
+  FormeD2: {fileID: 0}
+  FormeD2Mur: {fileID: 0}
+  FormeB2: {fileID: 0}
+  FormeB2Mur: {fileID: 0}
+  FormeA2: {fileID: 0}
+  FormeA2Mur: {fileID: 0}
 --- !u!114 &114359371265968174
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6366,8 +6372,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bc47ebd1f106314dac73b5fcc7c5176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FormeA: {fileID: 1020327256075862}
-  FormeAMur: {fileID: 1268029495696572}
+  FormeA: {fileID: 0}
+  FormeAMur: {fileID: 0}
   FormeB: {fileID: 0}
   FormeBMur: {fileID: 0}
   FormeC: {fileID: 0}
@@ -6378,6 +6384,12 @@ MonoBehaviour:
   FormeEMur: {fileID: 0}
   FormeF: {fileID: 0}
   FormeFMur: {fileID: 0}
+  FormeD2: {fileID: 0}
+  FormeD2Mur: {fileID: 0}
+  FormeB2: {fileID: 0}
+  FormeB2Mur: {fileID: 0}
+  FormeA2: {fileID: 1020327256075862}
+  FormeA2Mur: {fileID: 1268029495696572}
 --- !u!114 &114549668489745034
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6469,6 +6481,12 @@ MonoBehaviour:
   FormeEMur: {fileID: 0}
   FormeF: {fileID: 1520190608646926}
   FormeFMur: {fileID: 1810972268215722, guid: 4cacf2b99f357d8459161283b0e4381a, type: 2}
+  FormeD2: {fileID: 0}
+  FormeD2Mur: {fileID: 0}
+  FormeB2: {fileID: 0}
+  FormeB2Mur: {fileID: 0}
+  FormeA2: {fileID: 0}
+  FormeA2Mur: {fileID: 0}
 --- !u!224 &224307846417489054
 RectTransform:
   m_ObjectHideFlags: 1

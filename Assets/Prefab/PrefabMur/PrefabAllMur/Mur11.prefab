@@ -619,7 +619,7 @@ GameObject:
   - component: {fileID: 65714238256908224}
   m_Layer: 0
   m_Name: TriggerD (1)
-  m_TagString: D
+  m_TagString: D2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -686,7 +686,7 @@ GameObject:
   - component: {fileID: 54539873088205924}
   m_Layer: 0
   m_Name: FormeDSpawn (1)
-  m_TagString: D
+  m_TagString: D2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -874,7 +874,7 @@ GameObject:
   - component: {fileID: 114215077810783610}
   m_Layer: 0
   m_Name: FormeD (1)
-  m_TagString: D
+  m_TagString: D2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6398,12 +6398,14 @@ MonoBehaviour:
   FormeBMur: {fileID: 0}
   FormeC: {fileID: 0}
   FormeCMur: {fileID: 0}
-  FormeD: {fileID: 1405687771014496}
-  FormeDMur: {fileID: 1344804748906686}
+  FormeD: {fileID: 0}
+  FormeDMur: {fileID: 0}
   FormeE: {fileID: 0}
   FormeEMur: {fileID: 0}
   FormeF: {fileID: 0}
   FormeFMur: {fileID: 0}
+  FormeD2: {fileID: 1405687771014496}
+  FormeD2Mur: {fileID: 1344804748906686}
 --- !u!114 &114473261453258974
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6473,6 +6475,8 @@ MonoBehaviour:
   FormeEMur: {fileID: 0}
   FormeF: {fileID: 0}
   FormeFMur: {fileID: 0}
+  FormeD2: {fileID: 0}
+  FormeD2Mur: {fileID: 0}
 --- !u!114 &114819968151472696
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6520,3 +6524,5 @@ MonoBehaviour:
   FormeEMur: {fileID: 0}
   FormeF: {fileID: 0}
   FormeFMur: {fileID: 0}
+  FormeD2: {fileID: 0}
+  FormeD2Mur: {fileID: 0}

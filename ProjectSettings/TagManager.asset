@@ -10,6 +10,9 @@ TagManager:
   - D
   - E
   - F
+  - D2
+  - B2
+  - A2
   layers:
   - Default
   - TransparentFX

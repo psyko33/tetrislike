@@ -21,6 +21,15 @@ public class Correspondance : MonoBehaviour {
 
 	public GameObject FormeF ;
 	public GameObject FormeFMur;
+    
+    public GameObject FormeD2 ;
+    public GameObject FormeD2Mur;
+
+    public GameObject FormeB2 ;
+    public GameObject FormeB2Mur;
+    
+    public GameObject FormeA2 ;
+    public GameObject FormeA2Mur;
 
 
 
@@ -78,6 +87,29 @@ public class Correspondance : MonoBehaviour {
 
                 Tableaux.Instance().CheckWin();
                 FormeFMur.SetActive(true);
+                Destroy(gameObject);
+            }
+
+        if (other.gameObject.tag == gameObject.tag  && other.gameObject.tag == ("D2"))
+            {
+
+                Tableaux.Instance().CheckWin();
+                FormeD2Mur.SetActive(true);
+                Destroy(gameObject);
+            }
+
+        if (other.gameObject.tag == gameObject.tag  && other.gameObject.tag == ("B2"))
+            {
+
+                Tableaux.Instance().CheckWin();
+                FormeB2Mur.SetActive(true);
+                Destroy(gameObject);
+            }
+        if (other.gameObject.tag == gameObject.tag  && other.gameObject.tag == ("A2"))
+            {
+
+                Tableaux.Instance().CheckWin();
+                FormeA2Mur.SetActive(true);
                 Destroy(gameObject);
             }
                 
