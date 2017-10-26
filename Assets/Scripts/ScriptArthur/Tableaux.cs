@@ -23,6 +23,7 @@ public class Tableaux : MonoBehaviour {
 	public ParticleSystem confeti2;
 	public AudioSource audio; 
 	private int nbGemmes = 0;
+	public Text gemmes;
 	
 
 
@@ -148,10 +149,13 @@ public class Tableaux : MonoBehaviour {
 	public void Add100()
 	{
 		nbGemmes+=100;
+		gemmes.text = nbGemmes.ToString(""+"Gemmes");
+
 	}
 	public void Add600()
 	{
 		nbGemmes+=600;
+		gemmes.text = nbGemmes.ToString(""+"Gemmes");
 	}
 
 
