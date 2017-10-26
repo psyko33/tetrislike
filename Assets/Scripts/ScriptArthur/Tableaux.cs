@@ -19,10 +19,10 @@ public class Tableaux : MonoBehaviour {
 	public GameObject uiManager;
 	public Text scoreFinal;
 	public Button boutonAddTimer;
-	private bool canBuy = true;
 	public ParticleSystem confeti1;
 	public ParticleSystem confeti2;
 	public AudioSource audio; 
+	private int nbGemmes = 0;
 	
 
 
@@ -129,14 +129,33 @@ public class Tableaux : MonoBehaviour {
 
 	public void BoutiqueAddTimer()
 	{
-		if(canBuy == true)
+		if (nbGemmes>20)
 		{
 		currentTimer+=10f;
 		timerText.text = currentTimer.ToString("f0");
-		canBuy = false ;
+		nbGemmes-=20;
 		}
-	 
 	}
+	 
+	public void BoutiqueSkip1Level()
+	{
+		if(nbGemmes>30)
+		{
+			nombreIdx++;
+		}
+	}
+
+	public void Add100()
+	{
+		nbGemmes+=100;
+	}
+	public void Add600()
+	{
+		nbGemmes+=600;
+	}
+
+
+
 
 	
 }
