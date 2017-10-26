@@ -130,35 +130,41 @@ public class Tableaux : MonoBehaviour {
 
 	public void BoutiqueAddTimer()
 	{
-		if (nbGemmes>20)
+		if (nbGemmes>=20)
 		{
 		currentTimer+=10f;
 		timerText.text = currentTimer.ToString("f0");
 		nbGemmes-=20;
+		gemmes.text = nbGemmes.ToString("");
+		gemmes2.text = nbGemmes.ToString("");
 		}
 	}
 	 
 	public void BoutiqueSkip1Level()
 	{
-		if(nbGemmes>30)
+		if(nbGemmes>=30 && nombreIdx < 19)
 		{
 			nombreIdx++;
 			nbGemmes-=30;
+			Destroy(currentWall);
+			PopMur();
+			gemmes.text = nbGemmes.ToString("");
+			gemmes2.text = nbGemmes.ToString("");
 		}
 	}
 
 	public void Add100()
 	{
 		nbGemmes+=100;
-		gemmes.text = nbGemmes.ToString(""+"Gemmes");
-		gemmes2.text = nbGemmes.ToString(""+"Gemmes");
+		gemmes.text = nbGemmes.ToString("");
+		gemmes2.text = nbGemmes.ToString("");
 
 	}
 	public void Add600()
 	{
 		nbGemmes+=600;
-		gemmes.text = nbGemmes.ToString(""+"Gemmes");
-		gemmes2.text = nbGemmes.ToString(""+"Gemmes");
+		gemmes.text = nbGemmes.ToString("");
+		gemmes2.text = nbGemmes.ToString("");
 	}
 
 
