@@ -26,7 +26,7 @@ static function HasInstance()
 
 private var Strings : Hashtable;
 private var path : String = "lang";
-private var language : String = "French";
+private var language : String = "Spanish";
 private var texts : Array = new Array();
 function Awake()
 {
@@ -40,10 +40,8 @@ function SwitchLanguage(languageToSet : String)
 	SetLanguage (path, language);
 }
 
-function ToggleLanguages (){
-	if(language == "English") language = "French";
-	else if(language == "French") language = "English";
-	SetLanguage (path, language);
+function ToggleLanguages (Lang : String){
+	SetLanguage (path, Lang);
 }
 
 function SetLanguage (path : String, language : String)

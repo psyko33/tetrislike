@@ -1,9 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <languages>
+	<French>
+
+		<!-- Main menu -->
+		<string name="Intro_langueFR">langues </string>
+		<string name="Intro_langueES">Idioma </string>
+		<string name="Intro_langueEN">Language </string>
+		<string name="Intro_bonsouar">salut ca va bien ou bien </string>
+	
+	</French>
+
 	<English>
 
 		<!-- Main menu -->
-		<string name="mainmenu_touchtostart">Touch screen to start</string>
+		<string name="Intro_langueFR">langues </string>
+		<string name="Intro_langueES">Idioma </string>
+		<string name="Intro_langueEN">Language </string>
+		<string name="Intro_bonsouar">my name is patrick</string>
 	
 	</English>
+	<Spanish>
+
+		<!-- Main menu -->
+		<string name="Intro_langueFR">langues </string>
+		<string name="Intro_langueES">Idioma </string>
+		<string name="Intro_langueEN">Language </string>
+		<string name="Intro_bonsouar">soy genial </string>
+	
+	</Spanish>
 </languages>
