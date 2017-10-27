@@ -9,6 +9,7 @@ public class Tableaux : MonoBehaviour {
 
 	public GameObject[] tableauxIdx;
 	private int nombreIdx;
+	private int nbSkipLvl;
 	private GameObject currentWall;
 	private int currentHoles;
 	private int currentscore;
@@ -29,6 +30,7 @@ public class Tableaux : MonoBehaviour {
 	private int nbGemmes = 0;
 	public Text gemmes;
 	public Text gemmes2;
+
 	
 
 
@@ -56,6 +58,7 @@ public class Tableaux : MonoBehaviour {
 	void Start () 
 	{
 		nombreIdx = 0;
+		nbSkipLvl = 2;
 		PopMur();
 		currentTimer = baseTimer;
 		
@@ -151,13 +154,17 @@ public class Tableaux : MonoBehaviour {
 	{
 		if(nbGemmes>=100 && nombreIdx < 19)
 		{
-			bouton.Play();
-			nombreIdx++;
-			nbGemmes-=100;
-			Destroy(currentWall);
-			PopMur();
-			gemmes.text = nbGemmes.ToString("");
-			gemmes2.text = nbGemmes.ToString("");
+			if (nbSkipLvl >= 0)
+			{
+				nbSkipLvl --;
+				bouton.Play();
+				nombreIdx++;
+				nbGemmes-=100;
+				Destroy(currentWall);
+				PopMur();
+				gemmes.text = nbGemmes.ToString("");
+				gemmes2.text = nbGemmes.ToString("");
+			}	
 		}
 	}
 
