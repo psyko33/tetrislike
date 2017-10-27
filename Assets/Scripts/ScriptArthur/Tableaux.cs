@@ -10,6 +10,7 @@ public class Tableaux : MonoBehaviour {
 	public GameObject[] tableauxIdx;
 	private int nombreIdx;
 	public int nbSkipLvl;
+	private int nbAudio;
 	private GameObject currentWall;
 	private int currentHoles;
 	private int currentscore;
@@ -26,6 +27,8 @@ public class Tableaux : MonoBehaviour {
 	public AudioSource bouton;
 	public AudioSource correctforme;
 	public AudioSource drag;
+	public AudioSource timesUp;
+	private bool audioOnce = false; 
 
 	private int nbGemmes = 0;
 	public Text gemmes;
@@ -59,6 +62,7 @@ public class Tableaux : MonoBehaviour {
 	{
 		nombreIdx = 0;
 		nbSkipLvl = 2;
+		nbAudio = 1;
 		PopMur();
 		currentTimer = baseTimer;
 		
@@ -67,6 +71,14 @@ public class Tableaux : MonoBehaviour {
 	void Update()
 	{
 		TimerCD();
+
+		if(audioOnce == true && nbAudio >= 0)
+		{
+			nbAudio --;
+			timesUp.Play();
+			audioOnce = false;
+		}
+
 	}
 	
 	void PopMur()
@@ -131,6 +143,7 @@ public class Tableaux : MonoBehaviour {
 
 		if(currentTimer <= 0.0f)
 		{
+			audioOnce = true;
 			UIManager.Instance().Timer();
 			scoreFinal.text=currentscore.ToString ("");
 		}
@@ -193,10 +206,3 @@ public class Tableaux : MonoBehaviour {
 
 	
 }
-
-
-	
-	
-
-	
-
