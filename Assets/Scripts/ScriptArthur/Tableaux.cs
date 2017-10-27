@@ -9,7 +9,7 @@ public class Tableaux : MonoBehaviour {
 
 	public GameObject[] tableauxIdx;
 	private int nombreIdx;
-	private int nbSkipLvl;
+	public int nbSkipLvl;
 	private GameObject currentWall;
 	private int currentHoles;
 	private int currentscore;
