@@ -401,7 +401,7 @@ GameObject:
   - component: {fileID: 4964051958896228}
   - component: {fileID: 65382753795012272}
   m_Layer: 0
-  m_Name: TriggerB
+  m_Name: TriggerFormeB
   m_TagString: B
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -434,7 +434,7 @@ GameObject:
   - component: {fileID: 4667737757721390}
   - component: {fileID: 65434470853077504}
   m_Layer: 0
-  m_Name: TriggerA
+  m_Name: TriggerFormeA
   m_TagString: A
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -934,7 +934,7 @@ GameObject:
   - component: {fileID: 4183535103742566}
   - component: {fileID: 114188426923310836}
   m_Layer: 0
-  m_Name: Mur1 1
+  m_Name: MurTestAll
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2710,7 +2710,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1308399543753132}
   m_LocalRotation: {x: -0.50000006, y: -0.50000006, z: -0.49999994, w: -0.49999994}
-  m_LocalPosition: {x: 7.87, y: -2.0194352, z: 2.02}
+  m_LocalPosition: {x: 7.724, y: -2.0194352, z: 2.015}
   m_LocalScale: {x: 0.9099354, y: 1.5277245, z: 0.9903547}
   m_Children: []
   m_Father: {fileID: 4183535103742566}
@@ -3045,7 +3045,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1278100008811154}
   m_LocalRotation: {x: -0.50000006, y: -0.50000006, z: -0.49999994, w: -0.49999994}
-  m_LocalPosition: {x: 7.92, y: -1.9774679, z: 4.55}
+  m_LocalPosition: {x: 7.788, y: -1.9774679, z: 4.55}
   m_LocalScale: {x: 0.97693974, y: 1.4883991, z: 0.9903547}
   m_Children: []
   m_Father: {fileID: 4183535103742566}
@@ -6064,7 +6064,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numHoles: 2
-  scoreMurs: 10
+  scoreMurs: 0
 --- !u!114 &114281205883389924
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6088,6 +6088,12 @@ MonoBehaviour:
   FormeEMur: {fileID: 0}
   FormeF: {fileID: 0}
   FormeFMur: {fileID: 0}
+  FormeD2: {fileID: 0}
+  FormeD2Mur: {fileID: 0}
+  FormeB2: {fileID: 0}
+  FormeB2Mur: {fileID: 0}
+  FormeA2: {fileID: 0}
+  FormeA2Mur: {fileID: 0}
 --- !u!114 &114397185538837802
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6135,6 +6141,12 @@ MonoBehaviour:
   FormeEMur: {fileID: 0}
   FormeF: {fileID: 0}
   FormeFMur: {fileID: 0}
+  FormeD2: {fileID: 0}
+  FormeD2Mur: {fileID: 0}
+  FormeB2: {fileID: 0}
+  FormeB2Mur: {fileID: 0}
+  FormeA2: {fileID: 0}
+  FormeA2Mur: {fileID: 0}
 --- !u!114 &114586405523105588
 MonoBehaviour:
   m_ObjectHideFlags: 1

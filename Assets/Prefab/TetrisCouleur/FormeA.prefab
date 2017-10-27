@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33265555497955596}
   - component: {fileID: 23438185478558260}
   m_Layer: 0
-  m_Name: Tetris 1
+  m_Name: Tetris1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -252,6 +252,12 @@ MonoBehaviour:
   FormeEMur: {fileID: 0}
   FormeF: {fileID: 0}
   FormeFMur: {fileID: 0}
+  FormeD2: {fileID: 0}
+  FormeD2Mur: {fileID: 0}
+  FormeB2: {fileID: 0}
+  FormeB2Mur: {fileID: 0}
+  FormeA2: {fileID: 0}
+  FormeA2Mur: {fileID: 0}
 --- !u!114 &114134371258394864
 MonoBehaviour:
   m_ObjectHideFlags: 1
